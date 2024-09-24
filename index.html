@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bootstrap Website</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -10,7 +13,24 @@
       crossorigin="anonymous"
     />
 
-    <title>Bootstrap Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -466,454 +486,481 @@
         </div>
       </div>
 
-      <div class="container-fluid custom-footer-bg">
-        <div class="text-white custom-footer-bg text-center pb-4 pt-4">
-          <h1 class="fw-bold">Pricing</h1>
-          <p>
-            Problems trying to resolve the conflict between <br />
-            the two major realms of Classical physics: Newtonian mechanics
+      <!-- Seoyun's Part -->
+      <div id="part4">
+        <div>
+          <h1 class="text-center mb-3 mt-sm-5">Pricing</h1>
+          <p class="text-center mx-auto">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
           </p>
         </div>
-
-        <div class="container pb-4">
+        <div
+          id="plans-container-desktop"
+          class="d-flex flex-column flex-sm-row gap-sm-5 mb-5"
+        >
           <div
-            class="row row-cols-1 row-cols-md-3 mb-3 text-center custom-footer-bg justify-content-center"
+            id="free"
+            class="d-flex flex-column justify-content-center align-items-center mx-auto py-5 px-4"
           >
-            <div class="col-md-4">
-              <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-body py-3">
-                  <h4
-                    class="my-0 fw-normal mb-3 mt-3 fw-bold custom-text-color"
-                  >
-                    FREE
-                  </h4>
-                  <p class="fw-bold custom-text-color">
-                    Organize across all apps by hand
-                  </p>
+            <span class="custom-title mb-4 order-sm-1">FREE</span>
+            <span class="custom-subtitle text-center mb-4 order-sm-2"
+              >Organize across all<br />
+              apps by hand</span
+            >
+            <div class="container text-center mb-3 order-sm-3">
+              <div class="row">
+                <div class="price col-5 pr-3">
+                  <div class="flex-fill text-end">0</div>
                 </div>
-                <div class="card-body">
-                  <h1
-                    class="card-title pricing-card-title custom-text-color2 fw-bold mb-0"
-                  >
-                    0$ <br />
-                    <small class="custom-text-color2 fs-6 fw-bold"
-                      >Per Month</small
-                    >
-                  </h1>
-                  <button
-                    type="button"
-                    class="w-100 btn btn-lg btn-primary mt-lg-4 mb-md-4"
-                  >
-                    Try for free
-                  </button>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs secondary-color-1.png"
-                        alt=""
-                        class="me-2"
-                      />Unlimited product updates
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs secondary-color-1.png"
-                        alt=""
-                        class="me-2"
-                      />Unlimited product updates
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs secondary-color-1.png"
-                        alt=""
-                        class="me-2"
-                      />Unlimited product updates
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs mute.png"
-                        alt=""
-                        class="me-2"
-                      />1GB Cloud storage
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs mute.png"
-                        alt=""
-                        class="me-2"
-                      />Email and support
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-body py-3">
-                  <div id="image-new">
-                    <img src="./assets/circle-box xs-circle.png" alt="image" />
+                <div class="col-5">
+                  <div class="row">
+                    <div class="col unit1 text-start p-0">$</div>
                   </div>
-                  <h4
-                    class="my-0 fw-normal mb-3 mt-3 fw-bold custom-text-color"
-                  >
-                    Silver
-                  </h4>
-                  <p class="fw-bold custom-text-color">
-                    Organize across all apps by hand
-                  </p>
-                </div>
-                <div class="card-body">
-                  <h1
-                    class="card-title pricing-card-title custom-text-color2 fw-bold mb-0"
-                  >
-                    9.99$ <br />
-                    <small class="custom-text-color2 fs-6 fw-bold"
-                      >Per Month</small
-                    >
-                  </h1>
-                  <button
-                    type="button"
-                    class="w-100 btn btn-lg btn-primary mt-lg-4 mb-md-4"
-                  >
-                    Try for free
-                  </button>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs secondary-color-1.png"
-                        alt=""
-                        class="me-2"
-                      />Unlimited product updates
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs secondary-color-1.png"
-                        alt=""
-                        class="me-2"
-                      />Unlimited product updates
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs secondary-color-1.png"
-                        alt=""
-                        class="me-2"
-                      />Unlimited product updates
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs mute.png"
-                        alt=""
-                        class="me-2"
-                      />1GB Cloud storage
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs mute.png"
-                        alt=""
-                        class="me-2"
-                      />Email and support
-                    </li>
-                  </ul>
+                  <div class="row">
+                    <div class="col unit2 text-start p-0">per month</div>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="conditions-box order-sm-5">
+              <div class="mb-3">
+                <img
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                  alt="checked"
+                />
+                <span class="montserrat-semibold"
+                  >Unlimited product updates</span
+                >
+              </div>
+              <div class="mb-3">
+                <img
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                  alt="checked"
+                />
+                <span class="montserrat-semibold"
+                  >Unlimited product updates</span
+                >
+              </div>
+              <div class="mb-3">
+                <img
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                  alt="checked"
+                />
+                <span class="montserrat-semibold"
+                  >Unlimited product updates</span
+                >
+              </div>
+              <div class="mb-3">
+                <img
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs mute.png"
+                  alt="not-checked"
+                />
+                <span class="montserrat-semibold">1GB Cloud storage</span><br />
+              </div>
+              <div class="mb-3 d-inline-flex align-items-start">
+                <img
+                  class="me-2"
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs mute.png"
+                  alt="not-checked"
+                />
+                <span class="montserrat-semibold align-top"
+                  >Email and community support</span
+                >
+              </div>
+            </div>
+            <div class="btn-container text-center mt-3 order-sm-4 mb-sm-5">
+              <button type="button" id="btn-custom1" class="btn btn-primary">
+                Try for free
+              </button>
+            </div>
+          </div>
 
-            <div class="col-md-4">
-              <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-body py-3">
-                  <h4
-                    class="my-0 fw-normal mb-3 mt-3 fw-bold custom-text-color"
-                  >
-                    GOLD
-                  </h4>
-                  <p class="fw-bold custom-text-color">
-                    Organize across all apps by hand
-                  </p>
+          <div
+            id="silver"
+            class="d-flex flex-column justify-content-center align-items-center mx-auto py-5 px-4"
+          >
+            <span class="custom-title mb-4 order-sm-1">SILVER</span>
+            <span class="custom-subtitle text-center mb-4 order-sm-2"
+              >Organize across all<br />
+              apps by hand</span
+            >
+            <div class="container text-center mb-3 order-sm-3">
+              <div class="row">
+                <div class="price col-7">
+                  <div class="flex-fill text-end">9.99</div>
                 </div>
-                <div class="card-body">
-                  <h1
-                    class="card-title pricing-card-title custom-text-color2 fw-bold mb-0"
-                  >
-                    19.99$ <br />
-                    <small class="custom-text-color2 fs-6 fw-bold"
-                      >Per Month</small
-                    >
-                  </h1>
-                  <button
-                    type="button"
-                    class="w-100 btn btn-lg btn-primary mt-lg-4 mb-md-4"
-                  >
-                    Try for free
-                  </button>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs secondary-color-1.png"
-                        alt=""
-                        class="me-2"
-                      />Unlimited product updates
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs secondary-color-1.png"
-                        alt=""
-                        class="me-2"
-                      />Unlimited product updates
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs secondary-color-1.png"
-                        alt=""
-                        class="me-2"
-                      />Unlimited product updates
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs mute.png"
-                        alt=""
-                        class="me-2"
-                      />1GB Cloud storage
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <img
-                        src="./assets/icn-circle circle-xs mute.png"
-                        alt=""
-                        class="me-2"
-                      />Email and support
-                    </li>
-                  </ul>
+                <div class="col-5">
+                  <div class="row">
+                    <div class="col unit1 text-start p-0">$</div>
+                  </div>
+                  <div class="row">
+                    <div class="col unit2 text-start p-0">per month</div>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="conditions-box order-sm-5">
+              <div class="mb-3">
+                <img
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                  alt="checked"
+                />
+                <span class="montserrat-semibold"
+                  >Unlimited product updates</span
+                >
+              </div>
+              <div class="mb-3">
+                <img
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                  alt="checked"
+                />
+                <span class="montserrat-semibold"
+                  >Unlimited product updates</span
+                >
+              </div>
+              <div class="mb-3">
+                <img
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                  alt="checked"
+                />
+                <span class="montserrat-semibold"
+                  >Unlimited product updates</span
+                >
+              </div>
+              <div class="mb-3">
+                <img
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs mute.png"
+                  alt="not-checked"
+                />
+                <span class="montserrat-semibold">1GB Cloud storage</span><br />
+              </div>
+              <div class="mb-3 d-inline-flex align-items-start">
+                <img
+                  class="me-2"
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs mute.png"
+                  alt="not-checked"
+                />
+                <span class="montserrat-semibold align-top"
+                  >Email and community support</span
+                >
+              </div>
+            </div>
+            <div class="btn-container text-center mt-3 order-sm-4 mb-sm-5">
+              <button type="button" id="btn-custom2" class="btn btn-primary">
+                Try for free
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="gold"
+            class="d-flex flex-column justify-content-center align-items-center mx-auto py-5 px-4"
+          >
+            <span class="custom-title mb-4 order-sm-1">GOLD</span>
+            <span class="custom-subtitle text-center mb-4 order-sm-2"
+              >Organize across all<br />
+              apps by hand</span
+            >
+            <div class="container text-center mb-3 order-sm-3">
+              <div class="row">
+                <div class="price col-7">
+                  <div class="flex-fill text-end">19.99</div>
+                </div>
+                <div class="col-5">
+                  <div class="row">
+                    <div class="col unit1 text-start p-0">$</div>
+                  </div>
+                  <div class="row">
+                    <div class="col unit2 text-start p-0">per month</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="conditions-box order-sm-5">
+              <div class="mb-3">
+                <img
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                  alt="checked"
+                />
+                <span class="montserrat-semibold"
+                  >Unlimited product updates</span
+                >
+              </div>
+              <div class="mb-3">
+                <img
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                  alt="checked"
+                />
+                <span class="montserrat-semibold"
+                  >Unlimited product updates</span
+                >
+              </div>
+              <div class="mb-3">
+                <img
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                  alt="checked"
+                />
+                <span class="montserrat-semibold"
+                  >Unlimited product updates</span
+                >
+              </div>
+              <div class="mb-3">
+                <img
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs mute.png"
+                  alt="not-checked"
+                />
+                <span class="montserrat-semibold">1GB Cloud storage</span><br />
+              </div>
+              <div class="mb-3 d-inline-flex align-items-start">
+                <img
+                  class="me-2"
+                  class="me-2"
+                  src="./assets/Section05/icn-circle circle-xs mute.png"
+                  alt="not-checked"
+                />
+                <span class="montserrat-semibold align-top"
+                  >Email and community support</span
+                >
+              </div>
+            </div>
+            <div class="btn-container text-center mt-3 order-sm-4 mb-sm-5">
+              <button type="button" id="btn-custom3" class="btn btn-primary">
+                Try for free
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </main>
 
-    <section
-      class="container-fluid bg-white row m-0"
-      style="
-        background-image: url('./assets/form-background.jpg');
-        background-size: cover;
-        background-position: top right;
-        background-repeat: no-repeat;
-      "
-    >
-      <div
-        class="d-flex flex-column p-5 col-12 col-md-8 justify-content-center align-items-center"
-      >
-        <div class="container fw-semibold">Contact Us</div>
-        <h1 class="container fw-bold mb-4">Make an Appointment</h1>
-
-        <div class="container-fluid row">
-          <div class="mb-3 col-12 col-md-6">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Full Name"
-              required
-            />
+      <!-- section6 -->
+      <div id="part5">
+        <form id="appointment-form" class="mx-auto mx-sm-0">
+          <span class="custom-subtitle2 d-block">Contact Us</span>
+          <h1 class="custom-title2 mb-5">Make an Appointment</h1>
+          <div class="row">
+            <div class="mb-4 col-sm-6">
+              <input
+                id="name-mobile"
+                type="name"
+                class="form-control"
+                aria-describedby="name"
+                placeholder="Full Name"
+              />
+              <input
+                id="name-desktop"
+                type="name"
+                class="form-control"
+                aria-describedby="name"
+                placeholder="Full Name *"
+              />
+            </div>
+            <div class="mb-4 col-sm-6">
+              <input
+                id="email-mobile"
+                type="email"
+                class="form-control"
+                aria-describedby="email"
+                placeholder="example@gmail.com"
+              />
+              <input
+                id="email-desktop"
+                type="email"
+                class="form-control"
+                aria-describedby="email"
+                placeholder="Email *"
+              />
+            </div>
           </div>
-
-          <div class="mb-3 col-12 col-md-6">
-            <input
-              type="email"
-              class="form-control"
-              placeholder="example@gmail.com"
-              required
-            />
+          <div class="row">
+            <div class="col-sm-6">
+              <select
+                class="form-select mb-4"
+                aria-label="Default select example"
+              >
+                <option class="select-option" selected>Please Select</option>
+                <option class="select-option" value="1">One</option>
+                <option class="select-option" value="2">Two</option>
+                <option class="select-option" value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-sm-6">
+              <select
+                class="form-select mb-4 col-sm-6"
+                aria-label="Default select example"
+              >
+                <option value="4" selected>4:00 Available</option>
+                <option value="5">5:00 Available</option>
+                <option value="6">6:00 Available</option>
+              </select>
+            </div>
           </div>
-
-          <div class="mb-3 col-12 col-md-6">
-            <select class="form-select" required>
-              <option selected>Please Select</option>
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-            </select>
-          </div>
-
-          <div class="mb-3 col-12 col-md-6">
-            <select class="form-select" required>
-              <option selected>4:00 Available</option>
-              <option value="1">4:00 PM</option>
-              <option value="2">5:00 PM</option>
-            </select>
-          </div>
-
-          <div class="mb-3 col-12">
+          <div class="mb-5">
             <textarea
               class="form-control"
-              rows="3"
+              rows="6"
               placeholder="Message"
             ></textarea>
           </div>
-
-          <button
-            type="submit"
-            class="btn btn-primary btn-block col-12 col-md-4 m-2"
-          >
+          <button type="submit" id="btn-custom4" class="btn btn-primary">
             Book Appointment
           </button>
+        </form>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div id="part6">
+        <div class="part6-wrapper my-5 mt-sm-5 mb-sm-2 row">
+          <div class="col-sm-10">
+            <h2 class="custom-title3 mb-2">
+              Consulting Agency For Your Business
+            </h2>
+            <p class="custom-subtitle3 mb-5">
+              the quick fox jumps over the lazy dog
+            </p>
+          </div>
+          <div class="col-sm-2">
+            <button type="button" id="btn-custom5" class="btn btn-primary">
+              Contact Us
+            </button>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <section
-      class="d-flex flex-column flex-md-row align-items-center px-md-5 pt-5 ms-4 ms-md-0"
-    >
-      <div>
-        <h3 class="custom-footer-b fw-bold">
-          Consulting Agency For Your Business
-        </h3>
-        <p class="custom-text-color">the quick fox jumps over the lazy dog</p>
+      <nav id="footer-nav" class="d-flex flex-column flex-sm-row pb-sm-3">
+        <div class="mb-4">
+          <h4 class="mb-3">Company Info</h4>
+          <span class="d-block mb-3">About Us</span>
+          <span class="d-block mb-3">Carrier</span>
+          <span class="d-block mb-3">We are hiring</span>
+          <span class="d-block mb-3">Blog</span>
+        </div>
+        <div class="mb-4">
+          <h4 class="mb-3">Legal</h4>
+          <span class="d-block mb-3">About Us</span>
+          <span class="d-block mb-3">Carrier</span>
+          <span class="d-block mb-3">We are hiring</span>
+          <span class="d-block mb-3">Blog</span>
+        </div>
+        <div class="mb-4">
+          <h4 class="mb-3">Features</h4>
+          <span class="d-block mb-3">Business Marketing</span>
+          <span class="d-block mb-3">User Analytic</span>
+          <span class="d-block mb-3">Live Chat</span>
+          <span class="d-block mb-3">Unlimited Support</span>
+        </div>
+        <div class="mb-4">
+          <h4 class="mb-3">Resources</h4>
+          <span class="d-block mb-3">IOS & Android</span>
+          <span class="d-block mb-3">Watch a Demo</span>
+          <span class="d-block mb-3">Customers</span>
+          <span class="d-block mb-3">API</span>
+        </div>
+        <div class="mb-4">
+          <h4 class="mb-3">Get In Touch</h4>
+          <span class="d-block mb-3"
+            ><img
+              id="phone-mobile"
+              class="me-2"
+              src="./assets/Footer/Vector.png"
+              alt="phone"
+            /><img
+              id="phone-desktop"
+              class="me-2"
+              src="./assets/Footer/bx_bx-phone.png"
+              alt="phone"
+            />
+            (480) 555-0103</span
+          >
+          <span class="d-block mb-3"
+            ><img
+              id="map-mobile"
+              class="me-2"
+              src="./assets/Footer/bx_bx-map.png"
+              alt="map"
+            /><img
+              id="map-desktop"
+              class="me-2"
+              src="./assets/Footer/bx_bx-map (1).png"
+              alt="map"
+            />
+            4517 Washington Ave.
+            <span id="address-detail">Manchester, Kentucky 39495</span></span
+          >
+          <span class="d-block mb-3"
+            ><img
+              id="mail-mobile"
+              class="me-2"
+              src="./assets/Footer/carbon_send-alt.png"
+              alt="email"
+            /><img
+              id="mail-desktop"
+              class="me-2"
+              src="./assets/Footer/carbon_send-alt (1).png"
+              alt="email"
+            />
+            debra.holt@example.com</span
+          >
+        </div>
+      </nav>
+
+      <div id="part7">
+        <div class="row">
+          <p class="mb-5 col-sm-10 mb-sm-0">
+            Made With Love By Figmaland All Right Reserved
+          </p>
+          <div id="sns" class="d-flex gap-3 mb-3 col-sm-2">
+            <img
+              id="fb-mobile"
+              src="./assets/Footer/ant-design_facebook-filled.png"
+              alt="facebook"
+            />
+            <img
+              id="insta-mobile"
+              src="./assets/Footer/ant-design_instagram-outlined.png"
+              alt="insta"
+            />
+            <img
+              id="x-mobile"
+              src="./assets/Footer/ant-design_twitter-outlined.png"
+              alt="x"
+            />
+            <img
+              id="youtube-mobile"
+              src="./assets/Footer/carbon_logo-youtube.png"
+              alt="youtube"
+            />
+            <img
+              id="fb-desktop"
+              src="./assets/Footer/facebook.png"
+              alt="facebook"
+            />
+            <img
+              id="insta-desktop"
+              src="./assets/Footer/instagram.png"
+              alt="insta"
+            />
+            <img id="x-desktop" src="./assets/Footer/twitter.png" alt="x" />
+          </div>
+        </div>
       </div>
-      <button type="button" class="btn btn-primary btn-lg ms-md-auto">
-        Contact Us
-      </button>
-    </section>
-
-    <div class="container-fluid custom-footer-bg text-white px-md-5">
-      <footer
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top mb-1 ms-5 ms-md-0"
-      >
-        <div class="col mb-3">
-          <h5 class="mb-4">Company Info</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">About Us</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Carrier</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">We are hiring</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Blog</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col mb-3">
-          <h5 class="mb-4">Legal</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">About Us</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Carrier</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">We are hiring</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Blog</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col mb-3">
-          <h5 class="mb-4">Features</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Business Marketing</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">User Analytic</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Live Chat</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Unlimited Support</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col mb-3">
-          <h5 class="mb-4">Resources</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">IOS & Android</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Watch a Demo</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Customers</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">API</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col mb-3">
-          <h5 class="mb-4">Get in Touch</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white"
-                ><img src="./assets/bx_bx-phone.png" alt="" class="me-2" />(480)
-                555-0103</a
-              >
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white"
-                ><img src="./assets/bx_bx-map.png" alt="" class="me-2" />4517
-                Washington Ave.</a
-              >
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white"
-                ><img
-                  src="./assets/carbon_send-alt.png"
-                  alt=""
-                  class="me-2"
-                />deb.hol@exmple.com</a
-              >
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </div>
-
-    <div
-      class="d-flex flex-column flex-sm-row justify-content-start justify-content-sm-between text-start text-sm-start py-4 my-4 custom-text-color custom-margin3 mt-1 ms-5 ms-md-0 px-md-5"
-    >
-      <p>Made With Love By Figmaland All Right Reserved</p>
-      <ul
-        class="list-unstyled d-flex justify-content-start justify-content-sm-start"
-      >
-        <li class="ms-3">
-          <a class="link-body-emphasis" href="#">
-            <svg class="bi" width="24" height="24">
-              <use xlink:href="#twitter">
-                <!-- <img src="./assets/twitter.png" alt="" > -->
-              </use>
-            </svg>
-          </a>
-        </li>
-        <li class="ms-3">
-          <a class="link-body-emphasis" href="#">
-            <svg class="bi" width="24" height="24">
-              <use xlink:href="#instagram">
-                <!-- <img src="./assets/instagram.png" alt=""> -->
-              </use>
-            </svg>
-          </a>
-        </li>
-        <li class="ms-3">
-          <a class="link-body-emphasis" href="#">
-            <svg class="bi" width="24" height="24">
-              <use xlink:href="#facebook">
-                <!-- <img src="./assets/facebook.png" alt=""> -->
-              </use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
+    </footer>
 
     <!-- Bootstrap JS and Popper.js for interactive components (e.g., dropdowns, modals) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
