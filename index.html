@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <title>Bootstrap Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- We Ensure ~ -->
+      <div
+        class="container-fluid col"
+        style="
+          background-image: url('./assets/header-background.png');
+          background-size: cover;
+          background-position: top left;
+          background-repeat: no-repeat;
+        "
+      >
+        <!-- nav for smaller than sm -->
+        <div>
+          <nav class="d-sm-none">
+            <div class="row p-3" style="background-color: #252b42">
+              <a class="col-6 navbar-brand text-white fs-5 fw-medium" href="#"
+                >BrandName</a
+              >
+              <div class="col-3"></div>
+              <div class="col-1">
+                <a href="#">
+                  <img
+                    src="./assets/icons/icon-search.png"
+                    class="object-fit-contain"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="col-1">
+                <a href="#">
+                  <img
+                    src="./assets/icons/icon-cart.png"
+                    class="object-fit-contain"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="col-1">
+                <a href="#">
+                  <img
+                    src="./assets/icons/icon-menu.png"
+                    class="object-fit-contain"
+                    width="20"
+                    height="20"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="row pt-3 pb-5" style="background-color: #252b42">
+              <div class="col-12 d-flex justify-content-center">
+                <a
+                  class="fs-4 text-white fw-medium text-decoration-none py-2"
+                  href="#"
+                  >Home</a
+                >
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <a
+                  class="fs-4 text-white fw-medium text-decoration-none py-2"
+                  href="#"
+                  >Product</a
+                >
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <a
+                  class="fs-4 text-white fw-medium text-decoration-none py-2"
+                  href="#"
+                  >Pricing</a
+                >
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <a
+                  class="fs-4 text-white fw-medium text-decoration-none py-2"
+                  href="#"
+                  >Contact</a
+                >
+              </div>
+            </div>
+          </nav>
+
+          <!-- nav for sm and larger -->
+          <nav class="d-none d-sm-flex">
+            <div
+              class="navbar navbar-expand-sm navbar-dark container-fluid d-flex flex-row justify-content-between mx-5 my-3"
+              aria-label="Fourth navbar example"
+            >
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">BrandName</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarsExample04"
+                  aria-controls="navbarsExample04"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Product</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Pricing</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Contact</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="container-fluid d-flex flex-row justify-content-end align-items-center"
+              >
+                <ul class="navbar-nav me-4 mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Login</a
+                    >
+                  </li>
+                </ul>
+                <button class="btn btn-primary" type="button">
+                  Become a member
+                  <i class="fas fa-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-12 col-sm-8 col-lg-6 p-5">
+          <h1
+            class="display-4 fw-bold text-white mb-4 text-center text-sm-start"
+          >
+            We Ensure A Best Insurance Service
+          </h1>
+
+          <p class="lead text-white mb-5 text-center text-sm-start">
+            We know how large objects will act, but things on a small scale just
+            do not act that way.
+          </p>
+
+          <!-- 기본 모바일 -->
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-center align-items-sm-start gap-3 mb-4"
+          >
+            <button
+              type="button"
+              class="w-auto btn btn-primary btn-lg align-self-center"
+            >
+              Get Quote Now
+            </button>
+            <button
+              type="button"
+              class="w-auto btn btn-outline-light btn-lg align-self-center"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="container-fluid d-flex flex-column flex-md-row p-5"
+      style="background-color: #252b42"
+    >
+      <div class="col-12 col-md-4 d-flex flex-column align-items-center py-5">
+        <img
+          src="./assets/icons/icon-mind.png"
+          alt="icon-mind"
+          class="object-fit-contain mb-3"
+          width="80"
+          height="80"
+        />
+        <p class="lead text-white fw-bold mb-2">Peace of Mind</p>
+        <p class="text-white text-center">
+          So it really behaves like neither<br />Now we have given up.
+        </p>
+      </div>
+      <div class="col-12 col-md-4 d-flex flex-column align-items-center py-5">
+        <img
+          src="./assets/icons/icon-life.png"
+          alt="icon-mind"
+          class="object-fit-contain mb-3"
+          width="80"
+          height="80"
+        />
+        <p class="lead text-white fw-bold mb-2">Peace of Mind</p>
+        <p class="text-white text-center">
+          So it really behaves like neither<br />Now we have given up.
+        </p>
+      </div>
+      <div class="col-12 col-md-4 d-flex flex-column align-items-center py-5">
+        <img
+          src="./assets/icons/icon-satisfaction.png"
+          alt="icon-mind"
+          class="object-fit-contain mb-3"
+          width="80"
+          height="80"
+        />
+        <p class="lead text-white fw-bold mb-2">Peace of Mind</p>
+        <p class="text-white text-center">
+          So it really behaves like neither<br />Now we have given up.
+        </p>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column p-5" style="background-color: #8ec2f2">
+      <h1 class="fw-bold text-white text-center">What Client Says</h1>
+      <p class="text-white text-center mb-2">
+        Problems trying to resolve the conflict between the two major realms of
+        Classical physics: Newtonian mechanics
+      </p>
+
+      <div class="d-flex flex-column gap-4 flex-md-row">
+        <div class="col-md-6 p-5 position-relative">
+          <div class="bg-white p-5">
+            <h3 class="fw-bold">Regina Miles</h3>
+            <p>Designer</p>
+
+            <div class="mb-3">
+              <img
+                src="./assets/icons/icon-star-fiiled.png"
+                width="25"
+                height="25"
+                class="object-fit-contain"
+              />
+              <img
+                src="./assets/icons/icon-star-fiiled.png"
+                width="25"
+                height="25"
+                class="object-fit-contain"
+              />
+              <img
+                src="./assets/icons/icon-star-fiiled.png"
+                width="25"
+                height="25"
+                class="object-fit-contain"
+              />
+              <img
+                src="./assets/icons/icon-star-fiiled.png"
+                width="25"
+                height="25"
+                class="object-fit-contain"
+              />
+              <img
+                src="./assets/icons/icon-star-outline.png"
+                width="25"
+                height="25"
+                class="object-fit-contain"
+              />
+            </div>
+
+            <p>
+              This proved to be impossible using the traditional concepts of
+              space and time. Einstein developed a new view of time first and
+              then space. This proved to be impossible using the traditional
+              concepts of space and time. Einstein developed a new view of time
+              first and then space.
+            </p>
+          </div>
+
+          <div
+            class="d-none d-md-inline position-absolute"
+            style="top: 90px; left: 0px"
+          >
+            <img src="./assets/users/user-1.png" width="80" height="80" />
+          </div>
+        </div>
+        <div class="col-md-6 p-5 position-relative">
+          <div class="bg-white p-5">
+            <h3 class="fw-bold">Regina Miles</h3>
+            <p>Designer</p>
+
+            <div class="mb-3">
+              <img
+                src="./assets/icons/icon-star-fiiled.png"
+                width="25"
+                height="25"
+                class="object-fit-contain"
+              />
+              <img
+                src="./assets/icons/icon-star-fiiled.png"
+                width="25"
+                height="25"
+                class="object-fit-contain"
+              />
+              <img
+                src="./assets/icons/icon-star-fiiled.png"
+                width="25"
+                height="25"
+                class="object-fit-contain"
+              />
+              <img
+                src="./assets/icons/icon-star-fiiled.png"
+                width="25"
+                height="25"
+                class="object-fit-contain"
+              />
+              <img
+                src="./assets/icons/icon-star-outline.png"
+                width="25"
+                height="25"
+                class="object-fit-contain"
+              />
+            </div>
+
+            <p>
+              This proved to be impossible using the traditional concepts of
+              space and time. Einstein developed a new view of time first and
+              then space. This proved to be impossible using the traditional
+              concepts of space and time. Einstein developed a new view of time
+              first and then space.
+            </p>
+          </div>
+
+          <div
+            class="d-none d-md-inline position-absolute"
+            style="top: 90px; left: 0px"
+          >
+            <img src="./assets/users/user-2.png" width="80" height="80" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="container-fluid custom-footer-bg">
+        <div class="text-white custom-footer-bg text-center pb-5 pt-4">
+          <h1 class="fw-bold desktopt pb-3 pt-3">Industry</h1>
+          <h1 class="mobilet fw-bold pb-3 pt-3">
+            We Are Optimists Who Love To Work Toghether
+          </h1>
+          <p>
+            Problems trying to resolve the conflict between <br />the two major
+            realms of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+        <div class="container pb-5">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+              <div class="img-container">
+                <img
+                  src="./assets/media bg-cover copy 2.png"
+                  alt=""
+                  class="img-custom img-fluid"
+                />
+                <div class="img-overlay text-white">
+                  <p>Tax Management</p>
+                  <h6 class="mb-3 mobilep">
+                    Life Tips From Top Ten Adventure Travelers
+                  </h6>
+                  <a href="#" class="btn btn-primary rounded-pill"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+              <div class="img-container">
+                <img
+                  src="./assets/media bg-cover copy.png"
+                  alt=""
+                  class="img-custom img-fluid"
+                />
+                <div class="img-overlay text-white">
+                  <p>Tax Management</p>
+                  <h6 class="mb-3 mobilep">
+                    Life Tips From Top Ten Adventure Travelers
+                  </h6>
+                  <a href="#" class="btn btn-primary rounded-pill"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+              <div class="img-container">
+                <img
+                  src="./assets/media bg-cover-2.png"
+                  alt=""
+                  class="img-custom img-fluid"
+                />
+                <div class="img-overlay text-white">
+                  <p>Tax Management</p>
+                  <h6 class="mb-3 mobilep">
+                    Life Tips From Top Ten Adventure Travelers
+                  </h6>
+                  <a href="#" class="btn btn-primary rounded-pill"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+              <div class="img-container">
+                <img
+                  src="./assets/media bg-cover.png"
+                  alt=""
+                  class="img-custom img-fluid"
+                />
+                <div class="img-overlay text-white">
+                  <p>Tax Management</p>
+                  <h6 class="mb-3 mobilep">
+                    Life Tips From Top Ten Adventure Travelers
+                  </h6>
+                  <a href="#" class="btn btn-primary rounded-pill"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid custom-footer-bg">
+        <div class="text-white custom-footer-bg text-center pb-4 pt-4">
+          <h1 class="fw-bold">Pricing</h1>
+          <p>
+            Problems trying to resolve the conflict between <br />
+            the two major realms of Classical physics: Newtonian mechanics
+          </p>
+        </div>
+
+        <div class="container pb-4">
+          <div
+            class="row row-cols-1 row-cols-md-3 mb-3 text-center custom-footer-bg justify-content-center"
+          >
+            <div class="col-md-4">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-body py-3">
+                  <h4
+                    class="my-0 fw-normal mb-3 mt-3 fw-bold custom-text-color"
+                  >
+                    FREE
+                  </h4>
+                  <p class="fw-bold custom-text-color">
+                    Organize across all apps by hand
+                  </p>
+                </div>
+                <div class="card-body">
+                  <h1
+                    class="card-title pricing-card-title custom-text-color2 fw-bold mb-0"
+                  >
+                    0$ <br />
+                    <small class="custom-text-color2 fs-6 fw-bold"
+                      >Per Month</small
+                    >
+                  </h1>
+                  <button
+                    type="button"
+                    class="w-100 btn btn-lg btn-primary mt-lg-4 mb-md-4"
+                  >
+                    Try for free
+                  </button>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs secondary-color-1.png"
+                        alt=""
+                        class="me-2"
+                      />Unlimited product updates
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs secondary-color-1.png"
+                        alt=""
+                        class="me-2"
+                      />Unlimited product updates
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs secondary-color-1.png"
+                        alt=""
+                        class="me-2"
+                      />Unlimited product updates
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs mute.png"
+                        alt=""
+                        class="me-2"
+                      />1GB Cloud storage
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs mute.png"
+                        alt=""
+                        class="me-2"
+                      />Email and support
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-body py-3">
+                  <div id="image-new">
+                    <img src="./assets/circle-box xs-circle.png" alt="image" />
+                  </div>
+                  <h4
+                    class="my-0 fw-normal mb-3 mt-3 fw-bold custom-text-color"
+                  >
+                    Silver
+                  </h4>
+                  <p class="fw-bold custom-text-color">
+                    Organize across all apps by hand
+                  </p>
+                </div>
+                <div class="card-body">
+                  <h1
+                    class="card-title pricing-card-title custom-text-color2 fw-bold mb-0"
+                  >
+                    9.99$ <br />
+                    <small class="custom-text-color2 fs-6 fw-bold"
+                      >Per Month</small
+                    >
+                  </h1>
+                  <button
+                    type="button"
+                    class="w-100 btn btn-lg btn-primary mt-lg-4 mb-md-4"
+                  >
+                    Try for free
+                  </button>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs secondary-color-1.png"
+                        alt=""
+                        class="me-2"
+                      />Unlimited product updates
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs secondary-color-1.png"
+                        alt=""
+                        class="me-2"
+                      />Unlimited product updates
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs secondary-color-1.png"
+                        alt=""
+                        class="me-2"
+                      />Unlimited product updates
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs mute.png"
+                        alt=""
+                        class="me-2"
+                      />1GB Cloud storage
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs mute.png"
+                        alt=""
+                        class="me-2"
+                      />Email and support
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-body py-3">
+                  <h4
+                    class="my-0 fw-normal mb-3 mt-3 fw-bold custom-text-color"
+                  >
+                    GOLD
+                  </h4>
+                  <p class="fw-bold custom-text-color">
+                    Organize across all apps by hand
+                  </p>
+                </div>
+                <div class="card-body">
+                  <h1
+                    class="card-title pricing-card-title custom-text-color2 fw-bold mb-0"
+                  >
+                    19.99$ <br />
+                    <small class="custom-text-color2 fs-6 fw-bold"
+                      >Per Month</small
+                    >
+                  </h1>
+                  <button
+                    type="button"
+                    class="w-100 btn btn-lg btn-primary mt-lg-4 mb-md-4"
+                  >
+                    Try for free
+                  </button>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs secondary-color-1.png"
+                        alt=""
+                        class="me-2"
+                      />Unlimited product updates
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs secondary-color-1.png"
+                        alt=""
+                        class="me-2"
+                      />Unlimited product updates
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs secondary-color-1.png"
+                        alt=""
+                        class="me-2"
+                      />Unlimited product updates
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs mute.png"
+                        alt=""
+                        class="me-2"
+                      />1GB Cloud storage
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <img
+                        src="./assets/icn-circle circle-xs mute.png"
+                        alt=""
+                        class="me-2"
+                      />Email and support
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section
+      class="container-fluid bg-white row m-0"
+      style="
+        background-image: url('./assets/form-background.jpg');
+        background-size: cover;
+        background-position: top right;
+        background-repeat: no-repeat;
+      "
+    >
+      <div
+        class="d-flex flex-column p-5 col-12 col-md-8 justify-content-center align-items-center"
+      >
+        <div class="container fw-semibold">Contact Us</div>
+        <h1 class="container fw-bold mb-4">Make an Appointment</h1>
+
+        <div class="container-fluid row">
+          <div class="mb-3 col-12 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+
+          <div class="mb-3 col-12 col-md-6">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="example@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="mb-3 col-12 col-md-6">
+            <select class="form-select" required>
+              <option selected>Please Select</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+            </select>
+          </div>
+
+          <div class="mb-3 col-12 col-md-6">
+            <select class="form-select" required>
+              <option selected>4:00 Available</option>
+              <option value="1">4:00 PM</option>
+              <option value="2">5:00 PM</option>
+            </select>
+          </div>
+
+          <div class="mb-3 col-12">
+            <textarea
+              class="form-control"
+              rows="3"
+              placeholder="Message"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary btn-block col-12 col-md-4 m-2"
+          >
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section
+      class="d-flex flex-column flex-md-row align-items-center px-md-5 pt-5 ms-4 ms-md-0"
+    >
+      <div>
+        <h3 class="custom-footer-b fw-bold">
+          Consulting Agency For Your Business
+        </h3>
+        <p class="custom-text-color">the quick fox jumps over the lazy dog</p>
+      </div>
+      <button type="button" class="btn btn-primary btn-lg ms-md-auto">
+        Contact Us
+      </button>
+    </section>
+
+    <div class="container-fluid custom-footer-bg text-white px-md-5">
+      <footer
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top mb-1 ms-5 ms-md-0"
+      >
+        <div class="col mb-3">
+          <h5 class="mb-4">Company Info</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">About Us</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Carrier</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">We are hiring</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5 class="mb-4">Legal</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">About Us</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Carrier</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">We are hiring</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5 class="mb-4">Features</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Business Marketing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">User Analytic</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Live Chat</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Unlimited Support</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5 class="mb-4">Resources</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">IOS & Android</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Watch a Demo</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Customers</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">API</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5 class="mb-4">Get in Touch</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white"
+                ><img src="./assets/bx_bx-phone.png" alt="" class="me-2" />(480)
+                555-0103</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white"
+                ><img src="./assets/bx_bx-map.png" alt="" class="me-2" />4517
+                Washington Ave.</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white"
+                ><img
+                  src="./assets/carbon_send-alt.png"
+                  alt=""
+                  class="me-2"
+                />deb.hol@exmple.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <div
+      class="d-flex flex-column flex-sm-row justify-content-start justify-content-sm-between text-start text-sm-start py-4 my-4 custom-text-color custom-margin3 mt-1 ms-5 ms-md-0 px-md-5"
+    >
+      <p>Made With Love By Figmaland All Right Reserved</p>
+      <ul
+        class="list-unstyled d-flex justify-content-start justify-content-sm-start"
+      >
+        <li class="ms-3">
+          <a class="link-body-emphasis" href="#">
+            <svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter">
+                <!-- <img src="./assets/twitter.png" alt="" > -->
+              </use>
+            </svg>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="link-body-emphasis" href="#">
+            <svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram">
+                <!-- <img src="./assets/instagram.png" alt=""> -->
+              </use>
+            </svg>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="link-body-emphasis" href="#">
+            <svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook">
+                <!-- <img src="./assets/facebook.png" alt=""> -->
+              </use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js for interactive components (e.g., dropdowns, modals) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

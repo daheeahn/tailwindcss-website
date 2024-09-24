@@ -1,0 +1,70 @@
+/* GENERAL color and font RULES */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #FAFAFA;
+}
+
+/* PARTICULAR color RULES */
+
+.custom-footer-bg {
+  background-color: #252B42;
+}
+
+.custom-text-color {
+  color: #737373;
+}
+
+.custom-text-color2 {
+  color: #23A6F0;
+}
+
+.btn-primary {
+  background-color: #23A6F0;
+  border-color: #23A6F0;
+}
+
+/* NECESSARY CSS FOR TRICKY IMAGES */
+
+.img-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  right: 15%;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 15px;
+}
+
+.img-custom {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#image-new {
+  position: relative;
+}
+
+#image-new img {
+  position: absolute;
+  top: -40px;
+  right: 10px;
+}
