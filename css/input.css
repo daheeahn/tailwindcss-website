@@ -1,4 +1,6 @@
-/* GENERAL color and font RULES */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
@@ -10,5 +12,4 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #fafafa;
 }
