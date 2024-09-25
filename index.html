@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Bootstrap Website</title>
+    <title>Tailwind Css Website</title>
 
     <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -45,14 +45,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/output.css" />
   </head>
 
   <body>
     <header>
-      <!-- We Ensure ~ -->
       <div
-        class="container-fluid col"
+        class="flex flex-col"
         style="
           background-image: url('./assets/header-background.png');
           background-size: cover;
@@ -60,15 +60,14 @@
           background-repeat: no-repeat;
         "
       >
-        <!-- nav for smaller than sm -->
-        <div>
-          <nav class="d-sm-none">
-            <div class="row p-3" style="background-color: #252b42">
-              <a class="col-6 navbar-brand text-white fs-5 fw-medium" href="#"
-                >BrandName</a
-              >
-              <div class="col-3"></div>
-              <div class="col-1">
+        <!-- navigation for smaller than sm -->
+        <div class="sm:hidden w-full flex flex-col bg-[#252B42]">
+          <div
+            class="flex flex-row justify-between items-center px-[5%] py-[20px]"
+          >
+            <h5 class="text-lg font-medium text-white">BrandName</h5>
+            <div class="flex flex-row items-center gap-[20px]">
+              <div>
                 <a href="#">
                   <img
                     src="./assets/icons/icon-search.png"
@@ -77,7 +76,7 @@
                     height="20"
                 /></a>
               </div>
-              <div class="col-1">
+              <div>
                 <a href="#">
                   <img
                     src="./assets/icons/icon-cart.png"
@@ -86,7 +85,7 @@
                     height="20"
                 /></a>
               </div>
-              <div class="col-1">
+              <div>
                 <a href="#">
                   <img
                     src="./assets/icons/icon-menu.png"
@@ -97,179 +96,125 @@
                 </a>
               </div>
             </div>
+          </div>
 
-            <div class="row pt-3 pb-5" style="background-color: #252b42">
-              <div class="col-12 d-flex justify-content-center">
-                <a
-                  class="fs-4 text-white fw-medium text-decoration-none py-2"
-                  href="#"
-                  >Home</a
-                >
-              </div>
-              <div class="col-12 d-flex justify-content-center">
-                <a
-                  class="fs-4 text-white fw-medium text-decoration-none py-2"
-                  href="#"
-                  >Product</a
-                >
-              </div>
-              <div class="col-12 d-flex justify-content-center">
-                <a
-                  class="fs-4 text-white fw-medium text-decoration-none py-2"
-                  href="#"
-                  >Pricing</a
-                >
-              </div>
-              <div class="col-12 d-flex justify-content-center">
-                <a
-                  class="fs-4 text-white fw-medium text-decoration-none py-2"
-                  href="#"
-                  >Contact</a
-                >
-              </div>
-            </div>
-          </nav>
-
-          <!-- nav for sm and larger -->
-          <nav class="d-none d-sm-flex">
-            <div
-              class="navbar navbar-expand-sm navbar-dark container-fluid d-flex flex-row justify-content-between mx-5 my-3"
-              aria-label="Fourth navbar example"
-            >
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">BrandName</a>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarsExample04"
-                  aria-controls="navbarsExample04"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarsExample04">
-                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"
-                        >Product</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"
-                        >Pricing</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"
-                        >Contact</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="container-fluid d-flex flex-row justify-content-end align-items-center"
-              >
-                <ul class="navbar-nav me-4 mb-2 mb-md-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Login</a
-                    >
-                  </li>
-                </ul>
-                <button class="btn btn-primary" type="button">
-                  Become a member
-                  <i class="fas fa-arrow-right ms-2"></i>
-                </button>
-              </div>
-            </div>
-          </nav>
+          <div class="flex flex-col items-center gap-5 pt-[30px] pb-[50px]">
+            <h3 class="text-lg font-medium text-white">Home</h3>
+            <h3 class="text-lg font-medium text-white">Product</h3>
+            <h3 class="text-lg font-medium text-white">Pricing</h3>
+            <h3 class="text-lg font-medium text-white">Contact</h3>
+          </div>
         </div>
 
-        <div class="col-12 col-sm-8 col-lg-6 p-5">
-          <h1
-            class="display-4 fw-bold text-white mb-4 text-center text-sm-start"
-          >
-            We Ensure A Best Insurance Service
-          </h1>
-
-          <p class="lead text-white mb-5 text-center text-sm-start">
-            We know how large objects will act, but things on a small scale just
-            do not act that way.
-          </p>
-
-          <!-- 기본 모바일 -->
-          <div
-            class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-center align-items-sm-start gap-3 mb-4"
-          >
+        <!-- navigation for bigger than sm -->
+        <div
+          class="hidden w-full sm:flex flex-row justify-between items-center px-[10%] py-[20px]"
+        >
+          <div class="flex flex-row items-center">
+            <h5 class="text-lg font-medium text-white mr-[30px]">BrandName</h5>
+            <h6 class="text-sm text-white mr-[10px]">Home</h6>
+            <h6 class="text-sm text-white mr-[10px]">Product</h6>
+            <h6 class="text-sm text-white mr-[10px]">Pricing</h6>
+            <h6 class="text-sm text-white mr-[10px]">Contact</h6>
+          </div>
+          <div class="flex flex-row items-center">
+            <h6 class="text-sm text-white mr-[30px]">Login</h6>
             <button
-              type="button"
-              class="w-auto btn btn-primary btn-lg align-self-center"
+              class="bg-primary-color text-white text-sm py-2 px-4 rounded"
             >
-              Get Quote Now
-            </button>
-            <button
-              type="button"
-              class="w-auto btn btn-outline-light btn-lg align-self-center"
-            >
-              Learn More
+              Become a member
+              <i class="fas fa-arrow-right ms-2"></i>
             </button>
           </div>
         </div>
+
+        <!-- We Ensure~ -->
+        <section
+          class="px-[10%] py-[80px] flex flex-col items-center sm:items-start sm:pt-[50px] sm:pb-[70px]"
+        >
+          <div
+            class="w-[85%] flex flex-col items-center sm:items-start sm:w-[400px]"
+          >
+            <h1
+              class="text-white font-bold text-4xl mb-5 leading-snug text-center sm:text-start"
+            >
+              We Ensure A Best Insurance Service
+            </h1>
+            <p
+              class="text-white text-sm mb-5 leading-normal text-center sm:text-start"
+            >
+              We know how large objects will act, but things on a small scale.
+            </p>
+            <div class="flex flex-col items-center sm:flex-row gap-[15px]">
+              <button
+                class="w-fit bg-primary-color text-white font-medium text-sm py-3 px-5 rounded-full"
+              >
+                Get Quote Now
+              </button>
+              <button
+                class="w-fit text-white font-medium text-sm py-3 px-5 rounded-full border border-white"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
     </header>
 
     <div
-      class="container-fluid d-flex flex-column flex-md-row p-5"
-      style="background-color: #252b42"
+      class="flex flex-col justify-center items-center sm:flex-row gap-[30px] bg-dark-background-color py-[60px]"
     >
-      <div class="col-12 col-md-4 d-flex flex-column align-items-center py-5">
+      <div class="flex flex-col items-center p-[30px]">
         <img
           src="./assets/icons/icon-mind.png"
           alt="icon-mind"
-          class="object-fit-contain mb-3"
+          class="object-contain mb-[20px]"
           width="80"
           height="80"
         />
-        <p class="lead text-white fw-bold mb-2">Peace of Mind</p>
-        <p class="text-white text-center">
+        <h6 class="text-lg text-white text-center font-medium mb-[10px]">
+          Peace of Mind
+        </h6>
+        <p class="text-sm text-white text-center">
           So it really behaves like neither<br />Now we have given up.
         </p>
       </div>
-      <div class="col-12 col-md-4 d-flex flex-column align-items-center py-5">
+      <div class="flex flex-col items-center p-[30px]">
         <img
           src="./assets/icons/icon-life.png"
           alt="icon-mind"
-          class="object-fit-contain mb-3"
+          class="object-contain mb-[20px]"
           width="80"
           height="80"
         />
-        <p class="lead text-white fw-bold mb-2">Peace of Mind</p>
-        <p class="text-white text-center">
-          So it really behaves like neither<br />Now we have given up.
+        <h6 class="text-lg text-white text-center font-medium mb-[10px]">
+          Set For Life
+        </h6>
+        <p class="text-sm text-white text-center">
+          They were used to create the <br />
+          machines that launched
         </p>
       </div>
-      <div class="col-12 col-md-4 d-flex flex-column align-items-center py-5">
+      <div class="flex flex-col items-center p-[30px]">
         <img
           src="./assets/icons/icon-satisfaction.png"
           alt="icon-mind"
-          class="object-fit-contain mb-3"
+          class="object-contain mb-[20px]"
           width="80"
           height="80"
         />
-        <p class="lead text-white fw-bold mb-2">Peace of Mind</p>
-        <p class="text-white text-center">
-          So it really behaves like neither<br />Now we have given up.
+        <h6 class="text-lg text-white text-center font-medium mb-[10px]">
+          100% Satisfaction
+        </h6>
+        <p class="text-sm text-white text-center">
+          So it really behaves like neither. <br />Now we have given up.
         </p>
       </div>
+    </div>
+
+    <div class="">
+      <p>division</p>
     </div>
 
     <div class="d-flex flex-column p-5" style="background-color: #8ec2f2">
@@ -960,8 +905,7 @@
       </div>
     </footer>
 
-    <!-- Bootstrap JS and Popper.js for interactive components (e.g., dropdowns, modals) -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script> -->
   </body>
 </html>
