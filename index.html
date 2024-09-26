@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Css Website</title>
 
-  <title>Tailwind Css Website</title>
-
-  <!-- <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
@@ -28,645 +27,929 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
     /> -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="./css/input.css" />
-  <link rel="stylesheet" href="./css/output.css" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
 
-<body>
-  <header>
-    <div class="flex flex-col" style="
+  <body>
+    <header>
+      <div
+        class="flex flex-col"
+        style="
           background-image: url('./assets/section1/header-background.png');
           background-size: cover;
           background-position: top left;
           background-repeat: no-repeat;
-        ">
-      <!-- navigation for smaller than sm -->
-      <div class="sm:hidden w-full flex flex-col bg-[#252B42] bg-red-400">
-        <div class="flex flex-row justify-between items-center px-[5%] py-[20px]">
-          <h5 class="text-lg font-medium text-white">BrandName</h5>
-          <div class="flex flex-row items-center gap-[20px]">
-            <div>
-              <a href="#">
-                <img src="./assets/section1/icon-search.png" class="object-fit-contain" width="20" height="20" /></a>
+        "
+      >
+        <!-- navigation for smaller than sm -->
+        <div class="sm:hidden w-full flex flex-col bg-[#252B42]">
+          <div
+            class="flex flex-row justify-between items-center px-[5%] py-[20px]"
+          >
+            <h5 class="text-lg font-medium text-white">BrandName</h5>
+            <div class="flex flex-row items-center gap-[20px]">
+              <div>
+                <a href="#">
+                  <img
+                    src="./assets/section1/icon-search.png"
+                    class="object-fit-contain"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div>
+                <a href="#">
+                  <img
+                    src="./assets/section1/icon-cart.png"
+                    class="object-fit-contain"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div>
+                <a href="#">
+                  <img
+                    src="./assets/section1/icon-menu.png"
+                    class="object-fit-contain"
+                    width="20"
+                    height="20"
+                  />
+                </a>
+              </div>
             </div>
-            <div>
-              <a href="#">
-                <img src="./assets/section1/icon-cart.png" class="object-fit-contain" width="20" height="20" /></a>
-            </div>
-            <div>
-              <a href="#">
-                <img src="./assets/section1/icon-menu.png" class="object-fit-contain" width="20" height="20" />
-              </a>
-            </div>
+          </div>
+
+          <div class="flex flex-col items-center gap-5 pt-[30px] pb-[50px]">
+            <h3 class="text-lg font-medium text-white">Home</h3>
+            <h3 class="text-lg font-medium text-white">Product</h3>
+            <h3 class="text-lg font-medium text-white">Pricing</h3>
+            <h3 class="text-lg font-medium text-white">Contact</h3>
           </div>
         </div>
 
-        <div class="flex flex-col items-center gap-5 pt-[30px] pb-[50px]">
-          <h3 class="text-lg font-medium text-white">Home</h3>
-          <h3 class="text-lg font-medium text-white">Product</h3>
-          <h3 class="text-lg font-medium text-white">Pricing</h3>
-          <h3 class="text-lg font-medium text-white">Contact</h3>
+        <!-- navigation for bigger than sm -->
+        <div
+          class="hidden w-full sm:flex flex-row justify-between items-center px-[10%] py-[20px]"
+        >
+          <div class="flex flex-row items-center">
+            <h5 class="text-lg font-medium text-white mr-[30px]">BrandName</h5>
+            <h6 class="text-sm text-white mr-[10px]">Home</h6>
+            <h6 class="text-sm text-white mr-[10px]">Product</h6>
+            <h6 class="text-sm text-white mr-[10px]">Pricing</h6>
+            <h6 class="text-sm text-white mr-[10px]">Contact</h6>
+          </div>
+          <div class="flex flex-row items-center">
+            <h6 class="text-sm text-white mr-[30px]">Login</h6>
+            <button
+              class="bg-primary-color text-white text-sm py-2 px-4 rounded"
+            >
+              Become a member
+              <i class="fas fa-arrow-right ms-2"></i>
+            </button>
+          </div>
         </div>
+
+        <!-- We Ensure~ -->
+        <section
+          class="px-[10%] py-[80px] flex flex-col items-center sm:items-start sm:pt-[50px] sm:pb-[70px]"
+        >
+          <div
+            class="w-[85%] flex flex-col items-center sm:items-start sm:w-[400px]"
+          >
+            <h2
+              class="text-white font-bold text-4xl mb-5 leading-snug text-center sm:text-start"
+            >
+              We Ensure A Best Insurance Service
+            </h2>
+            <p
+              class="text-white text-sm mb-5 leading-normal text-center sm:text-start"
+            >
+              We know how large objects will act, but things on a small scale.
+            </p>
+            <div class="flex flex-col items-center sm:flex-row gap-[15px]">
+              <button
+                class="w-fit bg-primary-color text-white font-medium text-sm py-3 px-5 rounded-full"
+              >
+                Get Quote Now
+              </button>
+              <button
+                class="w-fit text-white font-medium text-sm py-3 px-5 rounded-full border border-white"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <div
+      class="flex flex-col justify-center items-center sm:flex-row gap-[30px] bg-dark-background-color py-[60px]"
+    >
+      <div class="flex flex-col items-center p-[30px]">
+        <img
+          src="./assets/section2/icon-mind.png"
+          alt="icon-mind"
+          class="object-contain mb-[20px]"
+          width="80"
+          height="80"
+        />
+        <h6 class="text-lg text-white text-center font-medium mb-[10px]">
+          Peace of Mind
+        </h6>
+        <p class="text-sm text-white text-center">
+          So it really behaves like neither<br />Now we have given up.
+        </p>
+      </div>
+      <div class="flex flex-col items-center p-[30px]">
+        <img
+          src="./assets/section2/icon-life.png"
+          alt="icon-mind"
+          class="object-contain mb-[20px]"
+          width="80"
+          height="80"
+        />
+        <h6 class="text-lg text-white text-center font-medium mb-[10px]">
+          Set For Life
+        </h6>
+        <p class="text-sm text-white text-center">
+          They were used to create the <br />
+          machines that launched
+        </p>
+      </div>
+      <div class="flex flex-col items-center p-[30px]">
+        <img
+          src="./assets/section2/icon-satisfaction.png"
+          alt="icon-mind"
+          class="object-contain mb-[20px]"
+          width="80"
+          height="80"
+        />
+        <h6 class="text-lg text-white text-center font-medium mb-[10px]">
+          100% Satisfaction
+        </h6>
+        <p class="text-sm text-white text-center">
+          So it really behaves like neither. <br />Now we have given up.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col items-center bg-light-blue-color py-[70px] sm:py-[100px]"
+    >
+      <div class="w-[300px] sm:w-[600px] mb-[30px] sm:mb-[80px]">
+        <h2
+          class="text-white font-bold text-3xl leading-snug text-center mb-[10px]"
+        >
+          What Clients Say
+        </h2>
+        <p class="text-white text-center">
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
+        </p>
       </div>
 
-      <!-- navigation for bigger than sm -->
-      <div class="hidden w-full sm:flex flex-row justify-between items-center px-[10%] py-[20px]">
-        <div class="flex flex-row items-center">
-          <h5 class="text-lg font-medium text-white mr-[30px]">BrandName</h5>
-          <h6 class="text-sm text-white mr-[10px]">Home</h6>
-          <h6 class="text-sm text-white mr-[10px]">Product</h6>
-          <h6 class="text-sm text-white mr-[10px]">Pricing</h6>
-          <h6 class="text-sm text-white mr-[10px]">Contact</h6>
-        </div>
-        <div class="flex flex-row items-center">
-          <h6 class="text-sm text-white mr-[30px]">Login</h6>
-          <button class="bg-primary-color text-white text-sm py-2 px-4 rounded">
-            Become a member
-            <i class="fas fa-arrow-right ms-2"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- We Ensure~ -->
-      <section class="px-[10%] py-[80px] flex flex-col items-center sm:items-start sm:pt-[50px] sm:pb-[70px]">
-        <div class="w-[85%] flex flex-col items-center sm:items-start sm:w-[400px]">
-          <h2 class="text-white font-bold text-4xl mb-5 leading-snug text-center sm:text-start">
-            We Ensure A Best Insurance Service
-          </h2>
-          <p class="text-white text-sm mb-5 leading-normal text-center sm:text-start">
-            We know how large objects will act, but things on a small scale.
+      <div
+        class="flex flex-col items-center sm:flex-row gap-[25px] sm:gap-[80px]"
+      >
+        <div class="relative w-[80%] sm:w-[400px] bg-white px-[40px] py-[30px]">
+          <h3 class="text-black text-xl font-bold">Regina Miles</h3>
+          <h6 class="text-second-text-color text-sm mb-[10px]">Designer</h6>
+          <div class="flex flex-row mb-[10px]">
+            <img
+              src="./assets/section3/icon-star-fiiled.png"
+              width="20"
+              height="20"
+              class="object-fit-contain"
+            />
+            <img
+              src="./assets/section3/icon-star-fiiled.png"
+              width="20"
+              height="20"
+              class="object-fit-contain"
+            />
+            <img
+              src="./assets/section3/icon-star-fiiled.png"
+              width="20"
+              height="20"
+              class="object-fit-contain"
+            />
+            <img
+              src="./assets/section3/icon-star-fiiled.png"
+              width="20"
+              height="20"
+              class="object-fit-contain"
+            />
+            <img
+              src="./assets/section3/icon-star-outline.png"
+              width="20"
+              height="20"
+              class="object-fit-contain"
+            />
+          </div>
+          <p class="text-second-text-color text-sm">
+            This proved to be impossible using the traditional concepts of space
+            and time. Einstein developed a new view of time first and then
+            space. This proved to be impossible using the traditional concepts
+            of space and time. Einstein developed a new view of time first and
+            then space.
           </p>
-          <div class="flex flex-col items-center sm:flex-row gap-[15px]">
-            <button class="w-fit bg-primary-color text-white font-medium text-sm py-3 px-5 rounded-full">
-              Get Quote Now
-            </button>
-            <button class="w-fit text-white font-medium text-sm py-3 px-5 rounded-full border border-white">
-              Learn More
-            </button>
+
+          <!-- Absolute User Profile -->
+          <div class="hidden sm:flex absolute" style="top: 25px; left: -45px">
+            <img src="./assets/section3/user-1.png" width="70" height="70" />
           </div>
         </div>
-      </section>
-    </div>
-  </header>
+        <div class="relative w-[80%] sm:w-[400px] bg-white px-[40px] py-[30px]">
+          <h3 class="text-black text-xl font-bold">Regina Miles</h3>
+          <h6 class="text-second-text-color text-sm mb-[10px]">Designer</h6>
+          <div class="flex flex-row mb-[10px]">
+            <img
+              src="./assets/section3/icon-star-fiiled.png"
+              width="20"
+              height="20"
+              class="object-fit-contain"
+            />
+            <img
+              src="./assets/section3/icon-star-fiiled.png"
+              width="20"
+              height="20"
+              class="object-fit-contain"
+            />
+            <img
+              src="./assets/section3/icon-star-fiiled.png"
+              width="20"
+              height="20"
+              class="object-fit-contain"
+            />
+            <img
+              src="./assets/section3/icon-star-fiiled.png"
+              width="20"
+              height="20"
+              class="object-fit-contain"
+            />
+            <img
+              src="./assets/section3/icon-star-outline.png"
+              width="20"
+              height="20"
+              class="object-fit-contain"
+            />
+          </div>
+          <p class="text-second-text-color text-sm">
+            This proved to be impossible using the traditional concepts of space
+            and time. Einstein developed a new view of time first and then
+            space. This proved to be impossible using the traditional concepts
+            of space and time. Einstein developed a new view of time first and
+            then space.
+          </p>
 
-  <div class="flex flex-col justify-center items-center sm:flex-row gap-[30px] bg-dark-background-color py-[60px]">
-    <div class="flex flex-col items-center p-[30px]">
-      <img src="./assets/section2/icon-mind.png" alt="icon-mind" class="object-contain mb-[20px]" width="80"
-        height="80" />
-      <h6 class="text-lg text-white text-center font-medium mb-[10px]">
-        Peace of Mind
-      </h6>
-      <p class="text-sm text-white text-center">
-        So it really behaves like neither<br />Now we have given up.
-      </p>
-    </div>
-    <div class="flex flex-col items-center p-[30px]">
-      <img src="./assets/section2/icon-life.png" alt="icon-mind" class="object-contain mb-[20px]" width="80"
-        height="80" />
-      <h6 class="text-lg text-white text-center font-medium mb-[10px]">
-        Set For Life
-      </h6>
-      <p class="text-sm text-white text-center">
-        They were used to create the <br />
-        machines that launched
-      </p>
-    </div>
-    <div class="flex flex-col items-center p-[30px]">
-      <img src="./assets/section2/icon-satisfaction.png" alt="icon-mind" class="object-contain mb-[20px]" width="80"
-        height="80" />
-      <h6 class="text-lg text-white text-center font-medium mb-[10px]">
-        100% Satisfaction
-      </h6>
-      <p class="text-sm text-white text-center">
-        So it really behaves like neither. <br />Now we have given up.
-      </p>
-    </div>
-  </div>
-
-  <div class="flex flex-col items-center bg-light-blue-color py-[70px] sm:py-[100px]">
-    <div class="w-[300px] sm:w-[600px] mb-[30px] sm:mb-[80px]">
-      <h2 class="text-white font-bold text-3xl leading-snug text-center mb-[10px]">
-        What Clients Say
-      </h2>
-      <p class="text-white text-center">
-        Problems trying to resolve the conflict between the two major realms
-        of Classical physics: Newtonian mechanics
-      </p>
-    </div>
-
-    <div class="flex flex-col items-center sm:flex-row gap-[25px] sm:gap-[80px]">
-      <div class="relative w-[80%] sm:w-[400px] bg-white px-[40px] py-[30px]">
-        <h3 class="text-black text-xl font-bold">Regina Miles</h3>
-        <h6 class="text-second-text-color text-sm mb-[10px]">Designer</h6>
-        <div class="flex flex-row mb-[10px]">
-          <img src="./assets/section3/icon-star-fiiled.png" width="20" height="20" class="object-fit-contain" />
-          <img src="./assets/section3/icon-star-fiiled.png" width="20" height="20" class="object-fit-contain" />
-          <img src="./assets/section3/icon-star-fiiled.png" width="20" height="20" class="object-fit-contain" />
-          <img src="./assets/section3/icon-star-fiiled.png" width="20" height="20" class="object-fit-contain" />
-          <img src="./assets/section3/icon-star-outline.png" width="20" height="20" class="object-fit-contain" />
+          <!-- Absolute User Profile -->
+          <div class="hidden sm:flex absolute" style="top: 25px; left: -45px">
+            <img src="./assets/section3/user-2.png" width="70" height="70" />
+          </div>
         </div>
-        <p class="text-second-text-color text-sm">
-          This proved to be impossible using the traditional concepts of space
-          and time. Einstein developed a new view of time first and then
-          space. This proved to be impossible using the traditional concepts
-          of space and time. Einstein developed a new view of time first and
-          then space.
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col items-center bg-dark-background-color py-[70px] sm:py-[100px]"
+    >
+      <div class="w-[300px] sm:w-[600px] mb-[30px] sm:mb-[80px]">
+        <h2
+          class="text-white font-bold text-3xl leading-snug text-center mb-[10px]"
+        >
+          We Are Optimists Who Love To Work Toghether
+        </h2>
+        <p class="text-white text-center">
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
         </p>
-
-        <!-- Absolute User Profile -->
-        <div class="hidden sm:flex absolute" style="top: 25px; left: -45px">
-          <img src="./assets/section3/user-1.png" width="70" height="70" />
-        </div>
-      </div>
-      <div class="relative w-[80%] sm:w-[400px] bg-white px-[40px] py-[30px]">
-        <h3 class="text-black text-xl font-bold">Regina Miles</h3>
-        <h6 class="text-second-text-color text-sm mb-[10px]">Designer</h6>
-        <div class="flex flex-row mb-[10px]">
-          <img src="./assets/section3/icon-star-fiiled.png" width="20" height="20" class="object-fit-contain" />
-          <img src="./assets/section3/icon-star-fiiled.png" width="20" height="20" class="object-fit-contain" />
-          <img src="./assets/section3/icon-star-fiiled.png" width="20" height="20" class="object-fit-contain" />
-          <img src="./assets/section3/icon-star-fiiled.png" width="20" height="20" class="object-fit-contain" />
-          <img src="./assets/section3/icon-star-outline.png" width="20" height="20" class="object-fit-contain" />
-        </div>
-        <p class="text-second-text-color text-sm">
-          This proved to be impossible using the traditional concepts of space
-          and time. Einstein developed a new view of time first and then
-          space. This proved to be impossible using the traditional concepts
-          of space and time. Einstein developed a new view of time first and
-          then space.
-        </p>
-
-        <!-- Absolute User Profile -->
-        <div class="hidden sm:flex absolute" style="top: 25px; left: -45px">
-          <img src="./assets/section3/user-2.png" width="70" height="70" />
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="flex flex-col items-center bg-dark-background-color py-[70px] sm:py-[100px]">
-    <div class="w-[300px] sm:w-[600px] mb-[30px] sm:mb-[80px]">
-      <h2 class="text-white font-bold text-3xl leading-snug text-center mb-[10px]">
-        We Are Optimists Who Love To Work Toghether
-      </h2>
-      <p class="text-white text-center">
-        Problems trying to resolve the conflict between the two major realms
-        of Classical physics: Newtonian mechanics
-      </p>
-    </div>
-
-    <div class="flex flex-col items-center sm:flex-row gap-[25px] sm:gap-[20px]">
-      <div class="bg-cover bg-center flex flex-col justify-end w-[80%] h-[450px] sm:w-[330px] p-[30px]"
-        style="background-image: url('./assets/section4/bg-cover-1.png')">
-        <p class="text-light-text-color text-sm font-medium mb-[15px]">
-          Tax Management
-        </p>
-        <h5 class="text-light-text-color text-normal font-medium mb-[15px]">
-          Life Tips From Top Ten Adventure Travelers
-        </h5>
-        <button class="w-fit bg-primary-color text-white font-medium text-sm py-[10px] px-[35px] rounded-full">
-          View Project
-        </button>
       </div>
 
-      <div class="bg-cover bg-center flex flex-col justify-end w-[80%] sm:w-[330px] h-[450px] p-[30px]"
-        style="background-image: url('./assets/section4/bg-cover-2.png')">
-        <p class="text-light-text-color text-sm font-medium mb-[15px]">
-          Tax Management
-        </p>
-        <h5 class="text-light-text-color text-normal font-medium mb-[15px]">
-          Life Tips From Top Ten Adventure Travelers
-        </h5>
-        <button class="w-fit bg-primary-color text-white font-medium text-sm py-[10px] px-[35px] rounded-full">
-          View Project
-        </button>
-      </div>
-
-      <div class="bg-cover bg-center flex flex-col justify-end w-[80%] h-[450px] sm:w-[330px] p-[30px]"
-        style="background-image: url('./assets/section4/bg-cover-3.png')">
-        <p class="text-light-text-color text-sm font-medium mb-[15px]">
-          Tax Management
-        </p>
-        <h5 class="text-light-text-color text-normal font-medium mb-[15px]">
-          Life Tips From Top Ten Adventure Travelers
-        </h5>
-        <button class="w-fit bg-primary-color text-white font-medium text-sm py-[10px] px-[35px] rounded-full">
-          View Project
-        </button>
-      </div>
-
-      <div class="bg-cover bg-center flex flex-col justify-end w-[80%] h-[450px] sm:w-[330px] p-[30px]"
-        style="background-image: url('./assets/section4/bg-cover-4.png')">
-        <p class="text-light-text-color text-sm font-medium mb-[15px]">
-          Tax Management
-        </p>
-        <h5 class="text-light-text-color text-normal font-medium mb-[15px]">
-          Life Tips From Top Ten Adventure Travelers
-        </h5>
-        <button class="w-fit bg-primary-color text-white font-medium text-sm py-[10px] px-[35px] rounded-full">
-          View Project
-        </button>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container-fluid custom-footer-bg">
-    <div class="text-white custom-footer-bg text-center pb-5 pt-4">
-      <h1 class="fw-bold desktopt pb-3 pt-3">Industry</h1>
-      <h1 class="mobilet fw-bold pb-3 pt-3">
-        We Are Optimists Who Love To Work Toghether
-      </h1>
-      <p>
-        Problems trying to resolve the conflict between <br />the two major
-        realms of Classical physics: Newtonian mechanics
-      </p>
-    </div>
-    <div class="container pb-5">
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-          <div class="img-container">
-            <img src="./assets/media bg-cover copy 2.png" alt="" class="img-custom img-fluid" />
-            <div class="img-overlay text-white">
-              <p>Tax Management</p>
-              <h6 class="mb-3 mobilep">
-                Life Tips From Top Ten Adventure Travelers
-              </h6>
-              <a href="#" class="btn btn-primary rounded-pill">View Project</a>
-            </div>
-          </div>
+      <div
+        class="flex flex-col items-center sm:flex-row gap-[25px] sm:gap-[20px]"
+      >
+        <div
+          class="bg-cover bg-center flex flex-col justify-end w-[80%] h-[450px] sm:w-[330px] p-[30px]"
+          style="background-image: url('./assets/section4/bg-cover-1.png')"
+        >
+          <p class="text-light-text-color text-sm font-medium mb-[15px]">
+            Tax Management
+          </p>
+          <h5 class="text-light-text-color text-normal font-medium mb-[15px]">
+            Life Tips From Top Ten Adventure Travelers
+          </h5>
+          <button
+            class="w-fit bg-primary-color text-white font-medium text-sm py-[10px] px-[35px] rounded-full"
+          >
+            View Project
+          </button>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-          <div class="img-container">
-            <img src="./assets/media bg-cover copy.png" alt="" class="img-custom img-fluid" />
-            <div class="img-overlay text-white">
-              <p>Tax Management</p>
-              <h6 class="mb-3 mobilep">
-                Life Tips From Top Ten Adventure Travelers
-              </h6>
-              <a href="#" class="btn btn-primary rounded-pill">View Project</a>
-            </div>
-          </div>
+        <div
+          class="bg-cover bg-center flex flex-col justify-end w-[80%] sm:w-[330px] h-[450px] p-[30px]"
+          style="background-image: url('./assets/section4/bg-cover-2.png')"
+        >
+          <p class="text-light-text-color text-sm font-medium mb-[15px]">
+            Tax Management
+          </p>
+          <h5 class="text-light-text-color text-normal font-medium mb-[15px]">
+            Life Tips From Top Ten Adventure Travelers
+          </h5>
+          <button
+            class="w-fit bg-primary-color text-white font-medium text-sm py-[10px] px-[35px] rounded-full"
+          >
+            View Project
+          </button>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-          <div class="img-container">
-            <img src="./assets/media bg-cover-2.png" alt="" class="img-custom img-fluid" />
-            <div class="img-overlay text-white">
-              <p>Tax Management</p>
-              <h6 class="mb-3 mobilep">
-                Life Tips From Top Ten Adventure Travelers
-              </h6>
-              <a href="#" class="btn btn-primary rounded-pill">View Project</a>
-            </div>
-          </div>
+        <div
+          class="bg-cover bg-center flex flex-col justify-end w-[80%] h-[450px] sm:w-[330px] p-[30px]"
+          style="background-image: url('./assets/section4/bg-cover-3.png')"
+        >
+          <p class="text-light-text-color text-sm font-medium mb-[15px]">
+            Tax Management
+          </p>
+          <h5 class="text-light-text-color text-normal font-medium mb-[15px]">
+            Life Tips From Top Ten Adventure Travelers
+          </h5>
+          <button
+            class="w-fit bg-primary-color text-white font-medium text-sm py-[10px] px-[35px] rounded-full"
+          >
+            View Project
+          </button>
         </div>
 
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-          <div class="img-container">
-            <img src="./assets/media bg-cover.png" alt="" class="img-custom img-fluid" />
-            <div class="img-overlay text-white">
-              <p>Tax Management</p>
-              <h6 class="mb-3 mobilep">
-                Life Tips From Top Ten Adventure Travelers
-              </h6>
-              <a href="#" class="btn btn-primary rounded-pill">View Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Seoyun's Part -->
-  <div class="w-full bg-dark-background-color flex flex-col py-16 px-4 md:py-32 md:px-8">
-    <div class="text-center">
-      <h1 class="text-white text-4xl font-bold mb-5">Pricing</h1>
-      <p class="text-white text-sm font-semibold max-w-pros mb-8 md:w-1/3 md:mx-auto md:mb-16">
-        Problems trying to resolve the conflict between the two major realms
-        of Classical physics: Newtonian mechanics
-      </p>
-    </div>
-    <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-3 mt-8">
-      <!-- FREE Plan -->
-      <div id="free"
-        class="bg-white flex flex-col justify-center items-center mx-4 mb-5 py-9 px-5 shadow-box-shadow-custom rounded-lg">
-        <span class="text-2xl font-bold mb-4 md:order-1">FREE</span>
-        <span class="text-base font-bold text-second-text-color text-center mb-4 md:order-2">Organize across
-          all<br />apps by
-          hand</span>
-        <div class="md:hidden flex justify-between items-center gap-2 mb-5 md:order-3">
-          <span class="text-4xl text-third-text-color font-bold">0</span>
-          <div class="text-left flex flex-col">
-            <span class="text-sm text-third-text-color font-bold">$</span>
-            <span class="text-sm text-third-text-color">per month</span>
-          </div>
-        </div>
-        <!-- desktop price -->
-        <div class="hidden md:block flex flex-col items-center mb-5 md:order-3">
-          <div class="flex justify-center items-center text-4xl text-third-text-color font-bold">
-            <span>0</span>
-            <span class="text-3xl text-third-text-color font-bold">$</span>
-          </div>
-          <span class="text-sm text-third-text-color">per month</span>
-        </div>
-        <div class="mb-5 text-sm md:order-5 md:px-3">
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs secondary-color-1.png" alt="checked" />
-            <span class="font-semibold">Unlimited product updates</span>
-          </div>
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs secondary-color-1.png" alt="checked" />
-            <span class="font-semibold">Unlimited product updates</span>
-          </div>
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs secondary-color-1.png" alt="checked" />
-            <span class="font-semibold">Unlimited product updates</span>
-          </div>
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs mute.png" alt="not-checked" />
-            <span class="font-semibold">1GB Cloud storage</span>
-          </div>
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs mute.png" alt="not-checked" />
-            <span class="font-semibold md:w-10/12">Email and community support</span>
-          </div>
-        </div>
-        <button type="button"
-          class="bg-primary-color text-light-text-color text-sm font-semibold py-4 w-full rounded-md hover:bg-blue-500 md:order-4 md:mb-8">
-          Try for free
-        </button>
-      </div>
-
-      <!-- SILVER Plan -->
-      <div id="silver"
-        class="bg-white flex flex-col justify-center items-center mx-4 mb-5 py-9 px-5 shadow-box-shadow-custom rounded-lg relative">
-        <img src="./assets/Section05/circle-box xs-circle.png" class="absolute -top-8 left-2/3 w-20 h-20"
-          alt="Sticker" />
-        <span class=" text-2xl font-bold mb-4 md:order-1">SILVER</span>
-        <span class="text-base font-bold text-second-text-color text-center mb-4 md:order-2">Organize across
-          all<br />apps by
-          hand</span>
-        <div class="md:hidden flex justify-between items-center gap-2 mb-5 md:order-3">
-          <span class="text-4xl text-third-text-color font-bold">9.99</span>
-          <div class="text-left flex flex-col">
-            <span class="text-sm text-third-text-color font-bold">$</span>
-            <span class="text-sm text-third-text-color">per month</span>
-          </div>
-        </div>
-        <!-- desktop price -->
-        <div class="hidden md:block flex flex-col items-center mb-5 md:order-3">
-          <div class="flex justify-center items-center text-4xl text-third-text-color font-bold gap-1">
-            <span>9.99</span>
-            <span class="text-3xl text-third-text-color font-bold">$</span>
-          </div>
-          <span class="text-sm text-third-text-color ml-3">per month</span>
-        </div>
-        <div class="mb-5 text-sm md:order-5 md:px-3">
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs secondary-color-1.png" alt="checked" />
-            <span class="font-semibold">Unlimited product updates</span>
-          </div>
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs secondary-color-1.png" alt="checked" />
-            <span class="font-semibold">Unlimited product updates</span>
-          </div>
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs secondary-color-1.png" alt="checked" />
-            <span class="font-semibold">Unlimited product updates</span>
-          </div>
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs mute.png" alt="not-checked" />
-            <span class="font-semibold">1GB Cloud storage</span>
-          </div>
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs mute.png" alt="not-checked" />
-            <span class="font-semibold md:w-10/12">Email and community support</span>
-          </div>
-        </div>
-        <button type="button"
-          class="bg-primary-color text-light-text-color text-sm font-semibold py-4 w-full rounded-md hover:bg-blue-500 md:order-4 md:mb-8">
-          Try for free
-        </button>
-      </div>
-
-      <!-- GOLD Plan -->
-      <div id="gold"
-        class="bg-white flex flex-col justify-center items-center mx-4 mb-5 py-9 px-5 shadow-box-shadow-custom rounded-lg">
-        <span class=" text-2xl font-bold mb-4 md:order-1">GOLD</span>
-        <span class="text-base font-bold text-second-text-color text-center mb-4 md:order-2">Organize across
-          all<br />apps by
-          hand</span>
-        <div class="md:hidden flex justify-between items-center gap-2 mb-5 md:order-3">
-          <span class="text-4xl text-third-text-color font-bold">19.99</span>
-          <div class="text-left flex flex-col">
-            <span class="text-sm text-third-text-color font-bold">$</span>
-            <span class="text-sm text-third-text-color">per month</span>
-          </div>
-        </div>
-        <!-- desktop price -->
-        <div class="hidden md:block flex flex-col items-center mb-5 md:order-3">
-          <div class="flex justify-center items-center text-4xl text-third-text-color font-bold">
-            <span>19.99</span>
-            <span class="text-3xl text-third-text-color font-bold">$</span>
-          </div>
-          <span class="text-sm text-third-text-color ml-3">per month</span>
-        </div>
-        <div class="mb-5 text-sm md:order-5 md:px-3">
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs secondary-color-1.png" alt="checked" />
-            <span class="font-semibold">Unlimited product updates</span>
-          </div>
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs secondary-color-1.png" alt="checked" />
-            <span class="font-semibold">Unlimited product updates</span>
-          </div>
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs secondary-color-1.png" alt="checked" />
-            <span class="font-semibold">Unlimited product updates</span>
-          </div>
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs mute.png" alt="not-checked" />
-            <span class="font-semibold">1GB Cloud storage</span>
-          </div>
-          <div class="flex items-center mb-3">
-            <img class="mr-2" src="./assets/Section05/icn-circle circle-xs mute.png" alt="not-checked" />
-            <span class="font-semibold md:w-10/12">Email and community support</span>
-          </div>
-        </div>
-        <button type="button"
-          class="bg-primary-color text-light-text-color text-sm font-semibold py-4 w-full rounded-md hover:bg-blue-500 md:order-4 md:mb-8">
-          Try for free
-        </button>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- section6 -->
-  <div id="part5" class="w-full py-24 px-6 bg-cover bg-center"
-    style="background-image: url('./assets/Section06/background.jpg');">
-    <form id="appointment-form" class="font-montserrat md:w-5/12 md:mx-32">
-      <span class="block text-base font-bold text-fourth-text-color mb-2">Contact Us</span>
-      <h1 class="text-[2.2rem] font-bold text-left text-fourth-text-color mb-8 ml-3 md:ml-0">Make an
-        Appointment
-      </h1>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <div class="mb-3">
-          <input id="name-mobile" type="text"
-            class="md:hidden form-input w-full p-3 text-sm font-medium text-[#BDBDBD] border-2 border-[#BDBDBD] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            aria-describedby="name" placeholder="Full Name" />
-          <input id="name-desktop" type="text"
-            class="hidden md:inline-block form-input w-full p-3 text-sm font-medium text-[#BDBDBD] border-2 border-[#BDBDBD] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[#F9F9F9]"
-            aria-describedby="name" placeholder="Full Name *" />
-        </div>
-        <div class="mb-6">
-          <input id="email-mobile" type="email"
-            class="md:hidden form-input w-full p-3 text-sm font-medium text-[#BDBDBD] border-2 border-[#BDBDBD] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            aria-describedby="email" placeholder="example@gmail.com" />
-          <input id="email-desktop" type="email"
-            class="hidden md:inline-block form-input w-full p-3 text-sm font-medium text-[#BDBDBD] border-2 border-[#BDBDBD] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[#F9F9F9]"
-            aria-describedby="email" placeholder="Email *" />
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div>
-          <select
-            class="form-select mb-2 w-full p-3 text-sm font-medium text-[#BDBDBD] border-2 border-[#BDBDBD] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 md:bg-[#F9F9F9]"
-            aria-label="Default select example">
-            <option class="select-option" selected>Please Select</option>
-            <option class="select-option" value="1">One</option>
-            <option class="select-option" value="2">Two</option>
-            <option class="select-option" value="3">Three</option>
-          </select>
-        </div>
-        <div>
-          <select
-            class="form-select mb-8 w-full p-3 text-sm font-medium text-[#BDBDBD] border-2 border-[#BDBDBD] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[#F9F9F9]"
-            aria-label="Default select example">
-            <option value="4" selected>4:00 Available</option>
-            <option value="5">5:00 Available</option>
-            <option value="6">6:00 Available</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="mb-12">
-        <textarea
-          class="form-textarea w-full p-3 text-sm font-medium text-[#BDBDBD] border-2 border-[#BDBDBD] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[#F9F9F9]"
-          rows="6" placeholder="Message"></textarea>
-      </div>
-      <button type="submit"
-        class="bg-primary-color text-light-text-color text-sm font-semibold py-4 w-full rounded-md hover:bg-blue-500 md:w-5/12">
-        Book Appointment
-      </button>
-    </form>
-  </div>
-
-
-  <!-- footer -->
-  <footer class="bg-dark-background-color text-light-text-color font-montserrat">
-    <div id="part6" class="w-full bg-white text-fourth-text-color py-6 px-12 md:px-40">
-      <div class="flex flex-col sm:flex-row justify-between my-5 mt-sm-5 mb-sm-2">
-        <div class="sm:w-10/12">
-          <h2 class="text-2xl font-bold mb-2">Consulting Agency For Your Business</h2>
-          <p class="text-sm font-medium pr-16 mb-8">The quick fox jumps over the lazy dog</p>
-        </div>
-        <div class="sm:w-2/12 md:my-auto">
-          <button type="button"
-            class="bg-primary-color text-light-text-color text-sm font-semibold py-3 w-36 rounded-md hover:bg-blue-500 md:py-4">
-            Contact Us
+        <div
+          class="bg-cover bg-center flex flex-col justify-end w-[80%] h-[450px] sm:w-[330px] p-[30px]"
+          style="background-image: url('./assets/section4/bg-cover-4.png')"
+        >
+          <p class="text-light-text-color text-sm font-medium mb-[15px]">
+            Tax Management
+          </p>
+          <h5 class="text-light-text-color text-normal font-medium mb-[15px]">
+            Life Tips From Top Ten Adventure Travelers
+          </h5>
+          <button
+            class="w-fit bg-primary-color text-white font-medium text-sm py-[10px] px-[35px] rounded-full"
+          >
+            View Project
           </button>
         </div>
       </div>
     </div>
 
-    <nav id="footer-nav" class="flex flex-col sm:flex-row justify-around p-12 md:justify-evenly">
-      <div class="mb-4">
-        <h4 class="font-bold text-base mb-3 md:mb-5">Company Info</h4>
-        <span class="block text-sm font-medium mb-2">About Us</span>
-        <span class="block text-sm font-medium mb-2">Career</span>
-        <span class="block text-sm font-medium mb-2">We are hiring</span>
-        <span class="block text-sm font-medium mb-2">Blog</span>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold text-base mb-3 md:mb-5">Legal</h4>
-        <span class="block text-sm font-medium mb-2">Privacy Policy</span>
-        <span class="block text-sm font-medium mb-2">Terms of Service</span>
-        <span class="block text-sm font-medium mb-2">Disclaimer</span>
-        <span class="block text-sm font-medium mb-2">Cookies Policy</span>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold text-base mb-3 md:mb-5">Features</h4>
-        <span class="block text-sm font-medium mb-2">Business Marketing</span>
-        <span class="block text-sm font-medium mb-2">User Analytics</span>
-        <span class="block text-sm font-medium mb-2">Live Chat</span>
-        <span class="block text-sm font-medium mb-2">Unlimited Support</span>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold text-base mb-3 md:mb-5">Resources</h4>
-        <span class="block text-sm font-medium mb-2">iOS & Android</span>
-        <span class="block text-sm font-medium mb-2">Watch a Demo</span>
-        <span class="block text-sm font-medium mb-2">Customers</span>
-        <span class="block text-sm font-medium mb-2">API</span>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold text-base mb-3 md:mb-5">Get In Touch</h4>
-        <span class="flex items-center text-sm font-medium mb-2">
-          <img id="phone-mobile" class="mr-2 md:hidden" src="./assets/Footer/Vector.png" alt="phone" />
-          <img id="phone-desktop" class="mr-2 hidden md:inline-block" src="./assets/Footer/bx_bx-phone.png"
-            alt="phone" />
-          (480) 555-0103
-        </span>
-        <span class="flex items-center text-sm font-medium mb-2">
-          <img id="map-mobile" class="mr-2 md:hidden" src="./assets/Footer/bx_bx-map.png" alt="map" />
-          <img id="map-desktop" class="mr-2 hidden md:inline-block" src="./assets/Footer/bx_bx-map (1).png" alt="map" />
-          4517 Washington Ave.</span>
-        <span class="flex items-center text-sm font-medium mb-2">
-          <img id="mail-mobile" class="mr-2 md:hidden" src="./assets/Footer/carbon_send-alt.png" alt="email" />
-          <img id="mail-desktop" class="mr-2 hidden md:inline-block" src="./assets/Footer/carbon_send-alt (1).png"
-            alt="email" />
-          debra.holt@example.com
-        </span>
-      </div>
-    </nav>
-
-    <div id="part7" class="w-full px-12 md:bg-white md:text-second-text-color md:px-40 md:py-6">
-      <div class="flex flex-col md:flex-row items-start md:justify-between md:items-center">
-        <p class="text-sm font-medium tracking-wide mb-12 px-2 md:mb-0">Made With Love By Figmaland All Rights Reserved
+    <!-- Seoyun's Part -->
+    <div
+      class="w-full bg-dark-background-color flex flex-col py-16 px-4 md:py-32 md:px-8"
+    >
+      <div class="text-center">
+        <h1 class="text-white text-4xl font-bold mb-5">Pricing</h1>
+        <p
+          class="text-white text-sm font-semibold max-w-pros mb-8 md:w-1/3 md:mx-auto md:mb-16"
+        >
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
         </p>
-        <div id="sns" class="flex gap-4 mb-12 px-2 md:mb-0 md:mr-20">
-          <img id="fb-mobile" class="w-6 h-6 md:hidden" src="./assets/Footer/ant-design_facebook-filled.png"
-            alt="facebook" />
-          <img id="insta-mobile" class="w-6 h-6 md:hidden" src="./assets/Footer/ant-design_instagram-outlined.png"
-            alt="insta" />
-          <img id="x-mobile" class="w-6 h-6 md:hidden" src="./assets/Footer/ant-design_twitter-outlined.png" alt="x" />
-          <img id="youtube-mobile" class="w-6 h-6 md:hidden" src="./assets/Footer/carbon_logo-youtube.png"
-            alt="youtube" />
-          <img id="fb-desktop" class="w-6 h-6 hidden md:inline-block" src="./assets/Footer/facebook.png"
-            alt="facebook" />
-          <img id="insta-desktop" class="w-6 h-6 hidden md:inline-block" src="./assets/Footer/instagram.png"
-            alt="insta" />
-          <img id="x-desktop" class="w-6 h-6 hidden md:inline-block" src="./assets/Footer/twitter.png" alt="x" />
+      </div>
+      <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-3 mt-8">
+        <!-- FREE Plan -->
+        <div
+          id="free"
+          class="bg-white flex flex-col justify-center items-center mx-4 mb-5 py-9 px-5 shadow-box-shadow-custom rounded-lg"
+        >
+          <span class="text-2xl font-bold mb-4 md:order-1">FREE</span>
+          <span
+            class="text-base font-bold text-second-text-color text-center mb-4 md:order-2"
+            >Organize across all<br />apps by hand</span
+          >
+          <div
+            class="md:hidden flex justify-between items-center gap-2 mb-5 md:order-3"
+          >
+            <span class="text-4xl text-third-text-color font-bold">0</span>
+            <div class="text-left flex flex-col">
+              <span class="text-sm text-third-text-color font-bold">$</span>
+              <span class="text-sm text-third-text-color">per month</span>
+            </div>
+          </div>
+          <!-- desktop price -->
+          <div
+            class="hidden md:block flex flex-col items-center mb-5 md:order-3"
+          >
+            <div
+              class="flex justify-center items-center text-4xl text-third-text-color font-bold"
+            >
+              <span>0</span>
+              <span class="text-3xl text-third-text-color font-bold">$</span>
+            </div>
+            <span class="text-sm text-third-text-color">per month</span>
+          </div>
+          <div class="mb-5 text-sm md:order-5 md:px-3">
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                alt="checked"
+              />
+              <span class="font-semibold">Unlimited product updates</span>
+            </div>
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                alt="checked"
+              />
+              <span class="font-semibold">Unlimited product updates</span>
+            </div>
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                alt="checked"
+              />
+              <span class="font-semibold">Unlimited product updates</span>
+            </div>
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs mute.png"
+                alt="not-checked"
+              />
+              <span class="font-semibold">1GB Cloud storage</span>
+            </div>
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs mute.png"
+                alt="not-checked"
+              />
+              <span class="font-semibold md:w-10/12"
+                >Email and community support</span
+              >
+            </div>
+          </div>
+          <button
+            type="button"
+            class="bg-primary-color text-light-text-color text-sm font-semibold py-4 w-full rounded-md hover:bg-blue-500 md:order-4 md:mb-8"
+          >
+            Try for free
+          </button>
+        </div>
+
+        <!-- SILVER Plan -->
+        <div
+          id="silver"
+          class="bg-white flex flex-col justify-center items-center mx-4 mb-5 py-9 px-5 shadow-box-shadow-custom rounded-lg relative"
+        >
+          <img
+            src="./assets/Section05/circle-box xs-circle.png"
+            class="absolute -top-8 left-2/3 w-20 h-20"
+            alt="Sticker"
+          />
+          <span class="text-2xl font-bold mb-4 md:order-1">SILVER</span>
+          <span
+            class="text-base font-bold text-second-text-color text-center mb-4 md:order-2"
+            >Organize across all<br />apps by hand</span
+          >
+          <div
+            class="md:hidden flex justify-between items-center gap-2 mb-5 md:order-3"
+          >
+            <span class="text-4xl text-third-text-color font-bold">9.99</span>
+            <div class="text-left flex flex-col">
+              <span class="text-sm text-third-text-color font-bold">$</span>
+              <span class="text-sm text-third-text-color">per month</span>
+            </div>
+          </div>
+          <!-- desktop price -->
+          <div
+            class="hidden md:block flex flex-col items-center mb-5 md:order-3"
+          >
+            <div
+              class="flex justify-center items-center text-4xl text-third-text-color font-bold gap-1"
+            >
+              <span>9.99</span>
+              <span class="text-3xl text-third-text-color font-bold">$</span>
+            </div>
+            <span class="text-sm text-third-text-color ml-3">per month</span>
+          </div>
+          <div class="mb-5 text-sm md:order-5 md:px-3">
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                alt="checked"
+              />
+              <span class="font-semibold">Unlimited product updates</span>
+            </div>
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                alt="checked"
+              />
+              <span class="font-semibold">Unlimited product updates</span>
+            </div>
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                alt="checked"
+              />
+              <span class="font-semibold">Unlimited product updates</span>
+            </div>
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs mute.png"
+                alt="not-checked"
+              />
+              <span class="font-semibold">1GB Cloud storage</span>
+            </div>
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs mute.png"
+                alt="not-checked"
+              />
+              <span class="font-semibold md:w-10/12"
+                >Email and community support</span
+              >
+            </div>
+          </div>
+          <button
+            type="button"
+            class="bg-primary-color text-light-text-color text-sm font-semibold py-4 w-full rounded-md hover:bg-blue-500 md:order-4 md:mb-8"
+          >
+            Try for free
+          </button>
+        </div>
+
+        <!-- GOLD Plan -->
+        <div
+          id="gold"
+          class="bg-white flex flex-col justify-center items-center mx-4 mb-5 py-9 px-5 shadow-box-shadow-custom rounded-lg"
+        >
+          <span class="text-2xl font-bold mb-4 md:order-1">GOLD</span>
+          <span
+            class="text-base font-bold text-second-text-color text-center mb-4 md:order-2"
+            >Organize across all<br />apps by hand</span
+          >
+          <div
+            class="md:hidden flex justify-between items-center gap-2 mb-5 md:order-3"
+          >
+            <span class="text-4xl text-third-text-color font-bold">19.99</span>
+            <div class="text-left flex flex-col">
+              <span class="text-sm text-third-text-color font-bold">$</span>
+              <span class="text-sm text-third-text-color">per month</span>
+            </div>
+          </div>
+          <!-- desktop price -->
+          <div
+            class="hidden md:block flex flex-col items-center mb-5 md:order-3"
+          >
+            <div
+              class="flex justify-center items-center text-4xl text-third-text-color font-bold"
+            >
+              <span>19.99</span>
+              <span class="text-3xl text-third-text-color font-bold">$</span>
+            </div>
+            <span class="text-sm text-third-text-color ml-3">per month</span>
+          </div>
+          <div class="mb-5 text-sm md:order-5 md:px-3">
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                alt="checked"
+              />
+              <span class="font-semibold">Unlimited product updates</span>
+            </div>
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                alt="checked"
+              />
+              <span class="font-semibold">Unlimited product updates</span>
+            </div>
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs secondary-color-1.png"
+                alt="checked"
+              />
+              <span class="font-semibold">Unlimited product updates</span>
+            </div>
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs mute.png"
+                alt="not-checked"
+              />
+              <span class="font-semibold">1GB Cloud storage</span>
+            </div>
+            <div class="flex items-center mb-3">
+              <img
+                class="mr-2"
+                src="./assets/Section05/icn-circle circle-xs mute.png"
+                alt="not-checked"
+              />
+              <span class="font-semibold md:w-10/12"
+                >Email and community support</span
+              >
+            </div>
+          </div>
+          <button
+            type="button"
+            class="bg-primary-color text-light-text-color text-sm font-semibold py-4 w-full rounded-md hover:bg-blue-500 md:order-4 md:mb-8"
+          >
+            Try for free
+          </button>
         </div>
       </div>
     </div>
-  </footer>
 
+    <!-- section6 -->
+    <div
+      id="part5"
+      class="w-full py-24 px-6 bg-cover bg-center"
+      style="background-image: url('./assets/Section06/background.jpg')"
+    >
+      <form id="appointment-form" class="font-montserrat md:w-5/12 md:mx-32">
+        <span class="block text-base font-bold text-fourth-text-color mb-2"
+          >Contact Us</span
+        >
+        <h1
+          class="text-[2.2rem] font-bold text-left text-fourth-text-color mb-8 ml-3 md:ml-0"
+        >
+          Make an Appointment
+        </h1>
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script> -->
-</body>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="mb-3">
+            <input
+              id="name-mobile"
+              type="text"
+              class="md:hidden form-input w-full p-3 text-sm font-medium text-[#BDBDBD] border-2 border-[#BDBDBD] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              aria-describedby="name"
+              placeholder="Full Name"
+            />
+            <input
+              id="name-desktop"
+              type="text"
+              class="hidden md:inline-block form-input w-full p-3 text-sm font-medium text-[#BDBDBD] border-2 border-[#BDBDBD] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[#F9F9F9]"
+              aria-describedby="name"
+              placeholder="Full Name *"
+            />
+          </div>
+          <div class="mb-6">
+            <input
+              id="email-mobile"
+              type="email"
+              class="md:hidden form-input w-full p-3 text-sm font-medium text-[#BDBDBD] border-2 border-[#BDBDBD] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              aria-describedby="email"
+              placeholder="example@gmail.com"
+            />
+            <input
+              id="email-desktop"
+              type="email"
+              class="hidden md:inline-block form-input w-full p-3 text-sm font-medium text-[#BDBDBD] border-2 border-[#BDBDBD] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[#F9F9F9]"
+              aria-describedby="email"
+              placeholder="Email *"
+            />
+          </div>
+        </div>
 
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <select
+              class="form-select mb-2 w-full p-3 text-sm font-medium text-[#BDBDBD] border-2 border-[#BDBDBD] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 md:bg-[#F9F9F9]"
+              aria-label="Default select example"
+            >
+              <option class="select-option" selected>Please Select</option>
+              <option class="select-option" value="1">One</option>
+              <option class="select-option" value="2">Two</option>
+              <option class="select-option" value="3">Three</option>
+            </select>
+          </div>
+          <div>
+            <select
+              class="form-select mb-8 w-full p-3 text-sm font-medium text-[#BDBDBD] border-2 border-[#BDBDBD] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[#F9F9F9]"
+              aria-label="Default select example"
+            >
+              <option value="4" selected>4:00 Available</option>
+              <option value="5">5:00 Available</option>
+              <option value="6">6:00 Available</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-12">
+          <textarea
+            class="form-textarea w-full p-3 text-sm font-medium text-[#BDBDBD] border-2 border-[#BDBDBD] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[#F9F9F9]"
+            rows="6"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="bg-primary-color text-light-text-color text-sm font-semibold py-4 w-full rounded-md hover:bg-blue-500 md:w-5/12"
+        >
+          Book Appointment
+        </button>
+      </form>
+    </div>
+
+    <!-- footer -->
+    <footer
+      class="bg-dark-background-color text-light-text-color font-montserrat"
+    >
+      <div
+        id="part6"
+        class="w-full bg-white text-fourth-text-color py-6 px-12 md:px-40"
+      >
+        <div
+          class="flex flex-col sm:flex-row justify-between my-5 mt-sm-5 mb-sm-2"
+        >
+          <div class="sm:w-10/12">
+            <h2 class="text-2xl font-bold mb-2">
+              Consulting Agency For Your Business
+            </h2>
+            <p class="text-sm font-medium pr-16 mb-8">
+              The quick fox jumps over the lazy dog
+            </p>
+          </div>
+          <div class="sm:w-2/12 md:my-auto">
+            <button
+              type="button"
+              class="bg-primary-color text-light-text-color text-sm font-semibold py-3 w-36 rounded-md hover:bg-blue-500 md:py-4"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <nav
+        id="footer-nav"
+        class="flex flex-col sm:flex-row justify-around p-12 md:justify-evenly"
+      >
+        <div class="mb-4">
+          <h4 class="font-bold text-base mb-3 md:mb-5">Company Info</h4>
+          <span class="block text-sm font-medium mb-2">About Us</span>
+          <span class="block text-sm font-medium mb-2">Career</span>
+          <span class="block text-sm font-medium mb-2">We are hiring</span>
+          <span class="block text-sm font-medium mb-2">Blog</span>
+        </div>
+        <div class="mb-4">
+          <h4 class="font-bold text-base mb-3 md:mb-5">Legal</h4>
+          <span class="block text-sm font-medium mb-2">Privacy Policy</span>
+          <span class="block text-sm font-medium mb-2">Terms of Service</span>
+          <span class="block text-sm font-medium mb-2">Disclaimer</span>
+          <span class="block text-sm font-medium mb-2">Cookies Policy</span>
+        </div>
+        <div class="mb-4">
+          <h4 class="font-bold text-base mb-3 md:mb-5">Features</h4>
+          <span class="block text-sm font-medium mb-2">Business Marketing</span>
+          <span class="block text-sm font-medium mb-2">User Analytics</span>
+          <span class="block text-sm font-medium mb-2">Live Chat</span>
+          <span class="block text-sm font-medium mb-2">Unlimited Support</span>
+        </div>
+        <div class="mb-4">
+          <h4 class="font-bold text-base mb-3 md:mb-5">Resources</h4>
+          <span class="block text-sm font-medium mb-2">iOS & Android</span>
+          <span class="block text-sm font-medium mb-2">Watch a Demo</span>
+          <span class="block text-sm font-medium mb-2">Customers</span>
+          <span class="block text-sm font-medium mb-2">API</span>
+        </div>
+        <div class="mb-4">
+          <h4 class="font-bold text-base mb-3 md:mb-5">Get In Touch</h4>
+          <span class="flex items-center text-sm font-medium mb-2">
+            <img
+              id="phone-mobile"
+              class="mr-2 md:hidden"
+              src="./assets/Footer/Vector.png"
+              alt="phone"
+            />
+            <img
+              id="phone-desktop"
+              class="mr-2 hidden md:inline-block"
+              src="./assets/Footer/bx_bx-phone.png"
+              alt="phone"
+            />
+            (480) 555-0103
+          </span>
+          <span class="flex items-center text-sm font-medium mb-2">
+            <img
+              id="map-mobile"
+              class="mr-2 md:hidden"
+              src="./assets/Footer/bx_bx-map.png"
+              alt="map"
+            />
+            <img
+              id="map-desktop"
+              class="mr-2 hidden md:inline-block"
+              src="./assets/Footer/bx_bx-map (1).png"
+              alt="map"
+            />
+            4517 Washington Ave.</span
+          >
+          <span class="flex items-center text-sm font-medium mb-2">
+            <img
+              id="mail-mobile"
+              class="mr-2 md:hidden"
+              src="./assets/Footer/carbon_send-alt.png"
+              alt="email"
+            />
+            <img
+              id="mail-desktop"
+              class="mr-2 hidden md:inline-block"
+              src="./assets/Footer/carbon_send-alt (1).png"
+              alt="email"
+            />
+            debra.holt@example.com
+          </span>
+        </div>
+      </nav>
+
+      <div
+        id="part7"
+        class="w-full px-12 md:bg-white md:text-second-text-color md:px-40 md:py-6"
+      >
+        <div
+          class="flex flex-col md:flex-row items-start md:justify-between md:items-center"
+        >
+          <p class="text-sm font-medium tracking-wide mb-12 px-2 md:mb-0">
+            Made With Love By Figmaland All Rights Reserved
+          </p>
+          <div id="sns" class="flex gap-4 mb-12 px-2 md:mb-0 md:mr-20">
+            <img
+              id="fb-mobile"
+              class="w-6 h-6 md:hidden"
+              src="./assets/Footer/ant-design_facebook-filled.png"
+              alt="facebook"
+            />
+            <img
+              id="insta-mobile"
+              class="w-6 h-6 md:hidden"
+              src="./assets/Footer/ant-design_instagram-outlined.png"
+              alt="insta"
+            />
+            <img
+              id="x-mobile"
+              class="w-6 h-6 md:hidden"
+              src="./assets/Footer/ant-design_twitter-outlined.png"
+              alt="x"
+            />
+            <img
+              id="youtube-mobile"
+              class="w-6 h-6 md:hidden"
+              src="./assets/Footer/carbon_logo-youtube.png"
+              alt="youtube"
+            />
+            <img
+              id="fb-desktop"
+              class="w-6 h-6 hidden md:inline-block"
+              src="./assets/Footer/facebook.png"
+              alt="facebook"
+            />
+            <img
+              id="insta-desktop"
+              class="w-6 h-6 hidden md:inline-block"
+              src="./assets/Footer/instagram.png"
+              alt="insta"
+            />
+            <img
+              id="x-desktop"
+              class="w-6 h-6 hidden md:inline-block"
+              src="./assets/Footer/twitter.png"
+              alt="x"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script> -->
+  </body>
 </html>
